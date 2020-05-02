@@ -227,3 +227,9 @@ main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"
 main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"][class*="isUnread"] > span[class*="unreadPill"] svg {
   display: none;
 }
+
+
+/* Role squared */
+.role-2irmRk,.roleCircle-3xAZ1j {
+	border-radius: 0
+}
