@@ -1,0 +1,229 @@
+@import url(https://zzzmario.github.io/dark-discord/src/source.css);
+@import url(https://zzzmario.github.io/modern-indicators/src/source.css);
+@import url("https://gibbu.github.io/BetterDiscord-Themes/RadialStatus/base.css");
+
+:root {
+  --rs-small-spacing: 2px;  /* spacing between avatar and status */
+  --rs-large-spacing: 3px;  /* spacing between avatar and status for user popouts & modals/profiles */
+  --rs-width: 2px;  /* Width/thickness of status border */
+  --rs-avatar-shape: 0%;  /* 50% for round - 0% for square */
+  --rs-online-color: #43b581;  /* color for online status */
+  --rs-idle-color: #faa61a;  /* color for idle status */
+  --rs-dnd-color: #f04747;  /* color for dnd status */
+  --rs-offline-color: #636b75;  /* color for offline status */
+  --rs-streaming-color: #643da7;  /* color for streaming status */
+  --rs-invisible-color: #747f8d;  /* color for invisible status - Note this will only show for your own invisibility */
+}
+
+:root {
+   --unread-badge: rgba(255,255,255,0.6) !important;
+   --unread-background: rgba(255, 255, 255, 0.008) !important;
+   --selected-badge: rgb(112, 135, 215) !important;
+   --selected-background: rgba(112, 135, 215, 0.1) !important;
+   --hovered: rgba(79,84,92,0.16) !important;
+   --active: rgba(79,84,92,0.24) !important;
+}
+
+.cozy-3raOZG .contents-2mQqc9 .avatar-1BDn8e {
+	z-index:1;
+	left: 0;
+	margin: 0 20px;
+	display: block;
+	border-radius: var(--user-roundness);
+	height: 40px !important;
+	width: 40px !important;
+	transition: 150ms ease box-shadow;
+}
+
+/*4.c. Icons*/
+
+#app-mount .wrapper-1Rf91z foreignObject {
+	mask: none !important;
+	border-radius: 0;
+	overflow:visible;
+}
+
+#app-mount .listItem-2P_4kh {
+	width: 60px;
+	left: 0;
+	margin-bottom: 10px;
+}
+
+.listItemWrapper-3X98Pc:active {
+	transform:none !important;
+}
+
+#app-mount .wrapper-1Rf91z foreignObject,
+.acronym-2mOFsV,
+.icon-27yU2q,
+.wrapper-1BJsBx,
+.wrapper-25eVIn,
+.circleIconButton-jET_ig,
+.closedFolderIconWrapper-15K9MK,
+.folder-21wGz3,
+.folderIconWrapper-226oVY,
+.dragInner-_SHftW,
+.guildsError-b7zR5H {
+	width: 40px;
+	height: 40px;
+}
+
+.icon-27yU2q,
+.folderIconWrapper-226oVY,
+.iconInactive-98JN5i,
+#app-mount .circleIconButton-jET_ig,
+.guildsError-b7zR5H,
+.guildIconUnavailable-5PMHDN,
+.guildIcon-lQ0uiM {
+    border-radius:var(--guilds-roundness) !important;
+}
+
+#app-mount .circleIconButton-jET_ig {
+	background: var(--accent);
+	color: #fff;
+}
+
+.circleIcon-LvPL6c,
+.circleIconButton-jET_ig svg {
+	width:20px;
+	height:20px;
+}
+
+.guildIconUnavailable-5PMHDN,
+.guildsError-b7zR5H {
+	line-height: 35px;
+	box-shadow: 0 0 12px var(--danger);
+	background: rgba(255, 255, 255, .1);
+}
+
+/* Variables */
+.group-spacing-0 {
+  --f-msg-spacing: 20px;
+}
+
+.group-spacing-4 {
+  --f-msg-spacing: 25px;
+}
+
+.group-spacing-8 {
+  --f-msg-spacing: 30px;
+}
+
+.group-spacing-16 {
+  --f-msg-spacing: 40px;
+}
+
+.group-spacing-24 {
+  --f-msg-spacing: 50px;
+}
+/* Message group border */
+[class*="group-spacing"] div[class*="groupStart"] {
+  margin-top: var(--f-msg-spacing);
+}
+
+[class*="group-spacing"] div[class*="groupStart"]::after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--f-msg-spacing) / 2);
+  left: 20px;
+  right: 20px;
+  border-bottom: thin solid var(--background-modifier-accent);
+}
+
+div[class^="divider-"] + [class*="groupStart"],
+div[class*="divider-"] + div[class*="backgroundFlash"] > div[class*="groupStart"] {
+  margin-top: 0px;
+}
+
+div[class^="divider-"] + [class*="groupStart"]::after,
+div[class*="divider-"] + div[class*="backgroundFlash"] > div[class*="groupStart"]::after {
+  display: none;
+}
+
+/* Welcome Message */
+main[class^="chatContent"] > div[class*="messagesWrapper"] div[class*="welcomeMessage"] {
+  padding: 20px 20px 0;
+}
+
+main[class^="chatContent"] > div[class*="messagesWrapper"] div[class*="welcomeMessage"] > div[class*="emptyMessage"] {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+main[class^="chatContent"] > div[class*="messagesWrapper"] div[class*="scroller"] > div[class*="placeholder"] + div[class*="container"] {
+  padding: 20px 20px 0;
+}
+
+main[class^="chatContent"] > div[class*="messagesWrapper"] div[class*="scroller"] > div[class*="placeholder"] + div[class*="default"] {
+  margin: 0 20px;
+  border-bottom: none;
+}
+
+/* Beginning of Channel */
+main[class^="chatContent"] > div[class*="messagesWrapper"] #messagesNavigationDescription + div[class^="default"] {
+  margin: 0 20px;
+  border-bottom: 0px;
+}
+
+/* Dividers */
+main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"] {
+  margin: calc(var(--f-msg-spacing) / 2) 20px;
+  top: 0;
+  height: 22px;
+  border-top: 0;
+}
+
+main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"] > span[class*="content"] {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  padding: 0 8px;
+  background-color: var(--background-primary);
+  border-radius: 0;
+}
+
+main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"] > span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  border-bottom: thin solid;
+  border-color: var(--background-modifier-accent);
+  z-index: -1;
+}
+
+main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"][class*="isUnread"] > span[class*="content"]::after {
+  border-color: currentColor;
+  opacity: .7;
+}
+
+main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"][class*="isUnread"] > span[class*="content"] + span[class*="unreadPill"] {
+  display: none;
+}
+
+main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"][class*="isUnread"] > span[class*="unreadPill"] {
+  position: initial;
+  height: 100%;
+  top: 0;
+  color: #f04747;
+  font-weight: 600;
+  padding: 0 8px;
+  background-color: var(--background-primary);
+  border-radius: 0;
+  font-size: 0px;
+}
+
+main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"][class*="isUnread"] > span[class*="unreadPill"]::after {
+  font-size: 14px;
+  content: "NEW MESSAGES";
+}
+
+main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"][class*="isUnread"] > span::before {
+  border-color: currentColor;
+  opacity: .7;
+}
+
+main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"][class*="isUnread"] > span[class*="unreadPill"] svg {
+  display: none;
+}
