@@ -95,7 +95,17 @@
 	box-shadow: 0 0 12px var(--danger);
 	background: rgba(255, 255, 255, .1);
 }
+/* Folders */
+.expandedFolderIconWrapper-1xLaU- svg {
+	transform: scale(4);
+}
 
+.expandedFolderBackground-2sPsd- {
+	width: 45px;
+	background: rgba(255, 255, 255, .15);
+	border-radius: var(--guilds-roundness);
+	left: 8px;
+}
 /* Role squared */
 .role-2irmRk,.roleCircle-3xAZ1j {
 	border-radius: 0
