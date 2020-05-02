@@ -96,6 +96,11 @@
 	background: rgba(255, 255, 255, .1);
 }
 
+/* Role squared */
+.role-2irmRk,.roleCircle-3xAZ1j {
+	border-radius: 0
+}
+
 /* Variables */
 .group-spacing-0 {
   --f-msg-spacing: 20px;
@@ -229,7 +234,3 @@ main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"
 }
 
 
-/* Role squared */
-.role-2irmRk,.roleCircle-3xAZ1j {
-	border-radius: 0
-}
