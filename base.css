@@ -1,6 +1,6 @@
-@import url https://hellbound1337.github.io/dark-discord/src/source.css
-@import url https://hellbound1337.github.io/modern-indicators/src/source.css
-@import url https://gibbu.github.io/BetterDiscord-Themes/RadialStatus/base.css
+@import url (https://hellbound1337.github.io/dark-discord/src/source.css);
+@import url (https://hellbound1337.github.io/modern-indicators/src/source.css);
+@import url (https://gibbu.github.io/BetterDiscord-Themes/RadialStatus/base.css);
 
 :root {
   --rs-small-spacing: 2px;  /* spacing between avatar and status */
