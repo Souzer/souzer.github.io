@@ -1,9 +1,5 @@
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css);
 @import url(https://gibbu.github.io/BetterDiscord-Themes/RadialStatus/base.css);
-@import url(https://fluffingtons.github.io/revert-discord/resources/theme.css);
-
-.theme-dark,
-.theme-light,
 
 :root {
 	--accentcolor: 				114,137,218;			/*	blurple			 - 	default:	114,137,218		 - 	hex:	#7289da		*/
