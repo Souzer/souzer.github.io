@@ -1,6 +1,6 @@
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css);
 @import url(https://gibbu.github.io/BetterDiscord-Themes/RadialStatus/base.css);
-
+@import url(https://fluffingtons.github.io/revert-discord/resources/theme.css);
 
 .theme-dark,
 .theme-light,
@@ -60,17 +60,7 @@
 }
 
 
-/* Folders */
-.expandedFolderIconWrapper-1xLaU- svg {
-	transform: scale(4);
-}
 
-.expandedFolderBackground-2sPsd- {
-	width: 45px;
-	background: rgba(255, 255, 255, .15);
-	border-radius: var(--guilds-roundness);
-	left: 8px;
-}
 /* Role squared */
 .role-2irmRk,.roleCircle-3xAZ1j {
 	border-radius: 0
