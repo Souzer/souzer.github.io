@@ -1,116 +1,115 @@
-@import url(https://gibbu.github.io/BetterDiscord-Themes/RadialStatus/base.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css);
+@import "https://nyri4.github.io/Comfy/betterdiscord/main.css";
 
-/* All colors are in RGB format (red, green, blue) use: https://www.google.com/search?q=colorpicker	*/
+/* If you don't like one of those variables until "Other settings" you can delete them or you can also
+    try to change those if you have some css knowledge */
+
+/* User popout animation */
+.headerPlaying-j0WQBV.header-2BwW8b, .headerSpotify-zpWxgT.header-2BwW8b, .headerStreaming-2FjmGz.header-2BwW8b, .headerXbox-3G-4PF.header-2BwW8b { padding-bottom: 30px;}.headerPlaying-j0WQBV.header-2BwW8b:after, .headerSpotify-zpWxgT.header-2BwW8b:after, .headerStreaming-2FjmGz.header-2BwW8b:after, .headerXbox-3G-4PF.header-2BwW8b:after { background: url('https://nyri4.github.io/Comfy/assets/wave.png'); background-size: 250px 20px; animation: animate 6s linear infinite !important; opacity: 1 !important;}.header-2BwW8b:after, .headerPlaying-j0WQBV:before, .headerSpotify-zpWxgT:before, .headerStreaming-2FjmGz:before, .headerXbox-3G-4PF:before { position: absolute;content: "";bottom: -1px;left: 0;width: 250px;height: 20px;z-index: -1;animation: animate2 4s linear infinite;animation-delay: 0s;opacity: 0.5;}.headerPlaying-j0WQBV:before { background: url('https://nyri4.github.io/Comfy/assets/wave_playing.png'); background-size: 250px 20px;}.headerSpotify-zpWxgT:before { background: url('https://nyri4.github.io/Comfy/assets/wave_spotify.png'); background-size: 250px 20px;}.headerStreaming-2FjmGz:before { background: url('https://nyri4.github.io/Comfy/assets/wave_streaming.png'); background-size: 250px 20px;}.headerXbox-3G-4PF:before { background: url('https://nyri4.github.io/Comfy/assets/wave_xbox.png'); background-size: 250px 20px;}@keyframes animate { 0% { background-position-x: 0;} 100% { background-position-x: 250px;}}@keyframes animate2 {0% { background-position-x: 250px; } 100% { background-position-x: 0px;}}
+
+
+/* Better Spotify plugin seek bar */
+.container-6sXIoE { border-bottom: none !important; padding-top: 0 !important; margin: 0 !important;}
+.container-6sXIoE .timeline-UWmgAx { position: absolute !important; left: 0px !important;width: 240px !important; height: 53px !important;margin: 0;-webkit-mask-image: linear-gradient(0.25turn, #0008, #0002) !important;mask-image: linear-gradient(0.25turn, #0008, #0002) !important;border-radius: 0 !important;}.bar-g2ZMIm .barFill-Dhkah7 { border-radius: 0 !important;}.container-6sXIoE.maximized-vv2Wr0 .bar-g2ZMIm { height: 87px !important;}.container-6sXIoE .button-14-BFJ:hover { background-color: transparent !important;}.barFill-Dhkah7, .timeline-UWmgAx:hover .barFill-Dhkah7 { background: var(--spotify-color) !important;}.inner-WRV6k5 { z-index: 1 !important;}.barText-lmqc5O, .grabber-7sd5f5 { display: none !important;}.container-6sXIoE .bar-g2ZMIm { width: 100% !important; height: 100% !important; margin-bottom: 0 !important;}    
+
 
 :root {
-	--accentcolor: 				114,137,218;			/*	blurple			 - 	default:	114,137,218		 - 	hex:	#7289da		*/
-	--linkcolor: 				85,205,252;				/*	link			 - 	default:	0,176,244		 - 	hex:	#00b0f4		*/
-	--mentioncolor: 			247,168,184;			/*	yellow			 - 	default:	250,166,26		 - 	hex:	#faa61a		*/
+/* -- Others settings -- */
+
+/* User button spacing */
+--user-buttons-spacing: 4px;
+
+/* Avatar position */
+--avatar-left: 327.5px;
+--avatar-bottom: 26.5px;
+
+/* Avatar roundess */
+--avatar-radius: 5px;  
+
+/* Status roundness */
+--status-radius: 1px; 
+
+/* Server roundess */
+--server-radius: 3px;
+
+/* Avatar width in modals */
+--avatar-width: 173px;
+
+/* Change bonfire in modals */
+--bonfire: url('https://my.catgirls.forsale/kxolV428.gif');
+
+/* Colored emoji picker */
+--colored-emoji: grayscale(0%); /* Change the value to "100%" if you want the basic one */
+
+/* Mention color */
+--mention-color: #f04731;
+--unread-color: #7289da;
+
+/* Mention color in chat */
+--mention-color-bar: #C66262;
+--mention-color-background: #c662621f;
+--mention-color-hover: #c6626226;
+
+/* User settings color (Mute, Deafen and settings) */
+--user-buttons-color: #784c6b;
+
+/* Chat buttons color */
+--chat-buttons: #784c6b;
+
+/* Spotify plugin seek bar */
+--spotify-color: #1EDC62;
+
+/* Status color */
+--online: #43B581;
+--iddle: #FAA61A;
+--dnd: #F04747;
+--offline: #747F8D;
+
+/* Circles next to role names */
+--role-circle: 3px;
+
+/* Tooltips */
+--tooltips: block; /* Set it to "none" if you don't want it */
+
+/* Discord logo */
+--discord-logo: none; /* Set it to "block" if you want it */
+
+}
+ 
+.theme-dark {
+    --background-tertiary: 								#0a0a0a;
+    --background-secondary: 							#131313;
+    --background-secondary-alt: 						#0f0f0f;
+    --background-primary: 								#161516;
+    --background-mobile-primary: 						#23283d;
+    --background-mobile-secondary: 						#1e2233;
+    --channeltextarea-background: 						#252525;
+    --background-accent: 								#323232;
+    --background-message-hover: 						transparent;
+    --background-modifier-hover: 						#382733;
+    --background-modifier-active: 						#1a1e2e;
+    --background-modifier-selected: 					#5c4053;
+    --deprecated-card-bg: 								#323232;
+    --background-floating: 								#252525;
+    --deprecated-quickswitcher-input-background:		#252525;
+    --elevation-low: 									none;
+    --scrollbar-auto-thumb: 							#784c6b;
+    --scrollbar-auto-track: 							#382733;
+    --scrollbar-thin-thumb: 							#141925;
+    --activity-card-background: 						#252525;
 	
-	--textbrightest: 			255,255,255;			/*	white			 - 	default:	255,255,255		 - 	hex:	#ffffff		*/
-	--textbrighter: 			222,222,222;			/*	darker white	 - 	default:	220,221,222		 - 	hex:	#dcddde		*/
-	--textbright: 				185,185,185;			/*	dark white		 - 	default:	185,187,190		 - 	hex:	#b9bbbe		*/
-	--textdark: 				140,140,140;			/*	bright grey		 - 	default:	142,146,151		 - 	hex:	#8e9297		*/
-	--textdarker: 				115,115,115;			/*	brighter grey	 - 	default:	114,118,125		 - 	hex:	#72767d		*/
-	--textdarkest: 				80,80,80;				/*	grey			 - 	default:	79,84,92		 - 	hex:	#4f545c		*/
-	
-	--backgroundaccent: 		50,50,50;				/*	darker grey		 - 	default:	64,68,75		 - 	hex:	#40444b		*/
-	--backgroundprimary: 		22,21,22;				/*	dark grey		 - 	default:	54,57,63		 - 	hex:	#36393f		*/
-	--backgroundsecondary: 		19,19,19;				/*	darkest grey	 - 	default:	47,49,54		 - 	hex:	#2f3136		*/
-	--backgroundsecondaryalt: 	15,15,15;				/*	grey-black		 - 	default:	41,43,47		 - 	hex:	#292b2f		*/
-	--backgroundtertiary: 		10,10,10;				/*	bright black	 - 	default:	32,34,37		 - 	hex:	#202225		*/
-	--backgroundfloating: 		0,0,0;					/*	brighter black	 - 	default:	24,25,28		 - 	hex:	#18191c		*/
-}
-
-:root {
-  --rs-small-spacing: 2px;  /* spacing between avatar and status */
-  --rs-large-spacing: 3px;  /* spacing between avatar and status for user popouts & modals/profiles */
-  --rs-width: 2px;  /* Width/thickness of status border */
-  --rs-avatar-shape: 0%;  /* 50% for round - 0% for square */
-  --rs-online-color: #43b581;  /* color for online status */
-  --rs-idle-color: #faa61a;  /* color for idle status */
-  --rs-dnd-color: #f04747;  /* color for dnd status */
-  --rs-offline-color: #636b75;  /* color for offline status */
-  --rs-streaming-color: #643da7;  /* color for streaming status */
-  --rs-invisible-color: #747f8d;  /* color for invisible status - Note this will only show for your own invisibility */
-}
-
-
-.cozy-3raOZG .contents-2mQqc9 .avatar-1BDn8e {
-	z-index:1;
-	left: 0;
-	margin: 0 20px;
-	display: block;
-	border-radius: var(--user-roundness);
-	height: 40px !important;
-	width: 40px !important;
-	transition: 150ms ease box-shadow;
-}
-
-
-/* Role squared */
-.role-2irmRk,.roleCircle-3xAZ1j {
-	border-radius: 0
-}
-
-#app-mount .wrapper-1Rf91z foreignObject {
-	mask: none !important;
-	border-radius: 0;
-	overflow:visible;
-}
-
-#app-mount .listItem-2P_4kh {
-	width: 60px;
-	left: 5px;
-	margin-bottom: 10px;
-}
-
-.listItemWrapper-3X98Pc:active {
-	transform:none !important;
-}
-
-#app-mount .wrapper-1Rf91z foreignObject,
-.acronym-2mOFsV,
-.icon-27yU2q,
-.wrapper-1BJsBx,
-.wrapper-25eVIn,
-.circleIconButton-jET_ig,
-.closedFolderIconWrapper-15K9MK,
-.folder-21wGz3,
-.folderIconWrapper-226oVY,
-.dragInner-_SHftW,
-.guildsError-b7zR5H {
-	width: 40px;
-	height: 40px;
-}
-
-.icon-27yU2q,
-.folderIconWrapper-226oVY,
-.iconInactive-98JN5i,
-#app-mount .circleIconButton-jET_ig,
-.guildsError-b7zR5H,
-.guildIconUnavailable-5PMHDN,
-.guildIcon-lQ0uiM {
-    border-radius:var(--guilds-roundness) !important;
-}
-
-#app-mount .circleIconButton-jET_ig {
-	background: var(--accent);
-	color: #fff;
-}
-
-.circleIcon-LvPL6c,
-.circleIconButton-jET_ig svg {
-	width:20px;
-	height:20px;
-}
-
-.guildIconUnavailable-5PMHDN,
-.guildsError-b7zR5H {
-	line-height: 35px;
-	box-shadow: 0 0 12px var(--danger);
-	background: rgba(255, 255, 255, .1);
+}		
+ 
+.theme-light { /* I don't support light theme it's just for the "Create a server" popup */
+    --background-tertiary: #252525;
+    --background-secondary: #1e2233;
+    --background-secondary-alt: #191f2e;
+    --background-primary: #23283d;
+    --background-accent: #6E85D3;
+    --background-modifier-hover: #262b41;
+    --background-modifier-active: #262b41;
+    --header-primary: #fff;
+    --header-secondary: #b1b5b9;
+    --text-normal: #8e9297;
 }
 
 /* Variables */
@@ -244,3 +243,4 @@ main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"
 main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"][class*="isUnread"] > span[class*="unreadPill"] svg {
   display: none;
 }
+
