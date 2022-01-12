@@ -1,107 +1,138 @@
-@import "https://nyri4.github.io/Comfy/betterdiscord/main.css";
+@import url(https://nyri4.github.io/Comfy/betterdiscord/main.css);
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/bettterInvites.css);
 
-/* If you don't like one of those variables until "Other settings" you can delete them or you can also
-    try to change those if you have some css knowledge */
+/* ═══════『 ⚠️・Important tips 』═══════
+*
+*   ➥ To comment or uncomment a line you need to put those "/" and "*" characters as you can see at the beginning and ending of my comments.
+*      (You don't need to put a * at each line like I do, it's just for readability). See more here : https://developer.mozilla.org/en-US/docs/Web/CSS/Comments
+*
+*   ➥ You can play with the values and see how it goes, don't delete "px" after the value if you don't have knowledges in CSS.
+*
+*   ➥ To change the colors, replace the HEX code with the one you picked here : https://htmlcolorcodes.com
+*/
 
-/* User popout animation */
-.headerPlaying-j0WQBV.header-2BwW8b, .headerSpotify-zpWxgT.header-2BwW8b, .headerStreaming-2FjmGz.header-2BwW8b, .headerXbox-3G-4PF.header-2BwW8b { padding-bottom: 30px;}.headerPlaying-j0WQBV.header-2BwW8b:after, .headerSpotify-zpWxgT.header-2BwW8b:after, .headerStreaming-2FjmGz.header-2BwW8b:after, .headerXbox-3G-4PF.header-2BwW8b:after { background: url('https://nyri4.github.io/Comfy/assets/wave.png'); background-size: 250px 20px; animation: animate 6s linear infinite !important; opacity: 1 !important;}.header-2BwW8b:after, .headerPlaying-j0WQBV:before, .headerSpotify-zpWxgT:before, .headerStreaming-2FjmGz:before, .headerXbox-3G-4PF:before { position: absolute;content: "";bottom: -1px;left: 0;width: 250px;height: 20px;z-index: -1;animation: animate2 4s linear infinite;animation-delay: 0s;opacity: 0.5;}.headerPlaying-j0WQBV:before { background: url('https://nyri4.github.io/Comfy/assets/wave_playing.png'); background-size: 250px 20px;}.headerSpotify-zpWxgT:before { background: url('https://nyri4.github.io/Comfy/assets/wave_spotify.png'); background-size: 250px 20px;}.headerStreaming-2FjmGz:before { background: url('https://nyri4.github.io/Comfy/assets/wave_streaming.png'); background-size: 250px 20px;}.headerXbox-3G-4PF:before { background: url('https://nyri4.github.io/Comfy/assets/wave_xbox.png'); background-size: 250px 20px;}@keyframes animate { 0% { background-position-x: 0;} 100% { background-position-x: 250px;}}@keyframes animate2 {0% { background-position-x: 250px; } 100% { background-position-x: 0px;}}
+/* ═══════『 🚫 ・ No scrollbars 』- Comment the line below if you want the scrollbar back */
+/*@import "https://nyri4.github.io/Comfy/betterdiscord/no-scrollbar.css"; */
 
+/* ═══════『 🎵 ・ Better SpotifyControls seek bar 』- Comment the line below if you want the scrollbar back */
+/* @import "https://nyri4.github.io/Comfy/betterdiscord/better-spotify.css"; */
 
-/* Better Spotify plugin seek bar */
-.container-6sXIoE { border-bottom: none !important; padding-top: 0 !important; margin: 0 !important;}
-.container-6sXIoE .timeline-UWmgAx { position: absolute !important; left: 0px !important;width: 240px !important; height: 53px !important;margin: 0;-webkit-mask-image: linear-gradient(0.25turn, #0008, #0002) !important;mask-image: linear-gradient(0.25turn, #0008, #0002) !important;border-radius: 0 !important;}.bar-g2ZMIm .barFill-Dhkah7 { border-radius: 0 !important;}.container-6sXIoE.maximized-vv2Wr0 .bar-g2ZMIm { height: 87px !important;}.container-6sXIoE .button-14-BFJ:hover { background-color: transparent !important;}.barFill-Dhkah7, .timeline-UWmgAx:hover .barFill-Dhkah7 { background: var(--spotify-color) !important;}.inner-WRV6k5 { z-index: 1 !important;}.barText-lmqc5O, .grabber-7sd5f5 { display: none !important;}.container-6sXIoE .bar-g2ZMIm { width: 100% !important; height: 100% !important; margin-bottom: 0 !important;}    
+:root { 
 
-.reaction-1hd86g.reactionMe-wv5HKu {
-    background-color: rgba(92, 37, 70.1);
-}
-.reactionSelected-1aMb2K {
-  background-color: #6e85d32;
-}
-:root {
-/* -- Others settings -- */
+/* ═══════『 💨 ・ Animations 』- If you don't want a high CPU usage, comment the line below */
+/* --disable-animations: 9s channel-unread infinite; */
 
-/* User button spacing */
---user-buttons-spacing: 4px;
+/* ═══════『 🖼️ ・ Background in the status picker 』═══════
+*
+*   ➥ Image : Replace the url of the current image with yours
+*
+*   ➥ Color : Delete the url("https://mywebsite/example.png") and replace it by an HEX color
+*
+*   ℹ️ : This background isn't and cannot be linked to the new Nitro banners or USRBG 
+*/
 
-/* Avatar position */
---avatar-left: 327.5px;
---avatar-bottom: 26.5px;
+--status-background: url('https://my.catgirls.forsale/wOHzN312.gif');
 
-/* Avatar roundess */
---avatar-radius: 5px;  
+/* ═══════『 ⚙️ / 🎤 / 🎧 ・ User button 』═══════
+*
+*   ➥ A higher value will means more space between the icons and a lower ...
+*
+*    ℹ️ : If you want to revert those to the old area, join the support server and check #css-snippets
+*
+*/
 
-/* Status roundness */
---status-radius: 3px; 
+/* Spacing - Default value : 8px */
+--user-buttons-spacing: 7px;
 
-/* Server roundess */
---server-radius: 3px;
-
-/* Avatar width in modals */
---avatar-width: 173px;
-
-/* Colored emoji picker */
---colored-emoji: grayscale(100%); /* Change the value to "100%" if you want the basic one */
-
-/* Mention color */
---mention-color: #f04731;
---unread-color: #7289da;
-
-/* Mention color in chat */
---mention-color-bar: #C66262;
---mention-color-background: #c662621f;
---mention-color-hover: #c6626226;
-
-/* User settings color (Mute, Deafen and settings) */
+/* Color - Default value : #096DC0 */
 --user-buttons-color: #784c6b;
 
-/* Chat buttons color */
+/* ═══════『 ⭕ Roundness settings 』═══════
+*
+*    ➥ A higher value will means more rounded corners and a lower ...
+*       0 ➜ Square
+*       25 ➜ Circle
+*/
+
+/* Avatars - Default value : 5px */
+--avatar-radius: px;  
+
+/* Status - Default value : 3px */
+--status-radius: 3px; 
+
+/* Servers - Default value : 8px */
+--server-radius: 8px;
+
+/* ═══════『 😃 Colored emoji picker 』═══════
+*   Change the value to "100%" if you want the default one */
+
+--colored-emoji: grayscale(0%);
+
+/* ═══════『 📜 Server/channel list 』═══════ */
+
+/* Mention - Default value : #F04747 */
+--mention-color: #F04747;
+
+/* Unread - Default value : #7289DA */
+--unread-color: #7289DA;
+
+/*  『 🔴 Mention colors in chat 』 */
+
+/* Bar on the right - Default value : #C66262 */
+--mention-color-bar: #C66262;
+
+/* Background - Default value : #C662621F */
+--mention-color-background: #C662621F;
+
+/* On hover - Default value : #C6626226 */
+--mention-color-hover: #C6626226;
+
+/* ═══════『 💬 Chat buttons 』═══════ */
+
+/* Default value : #7289DA */
 --chat-buttons: #784c6b;
 
-/* Spotify plugin seek bar */
+/* ═══════『 💬 SpotifyControls seek bar 』═══════
+*   ℹ️ : If you don't have the plugin : https://betterdiscord.app/plugin/SpotifyControls */
+
+/* Default value : #1EDC62 */
 --spotify-color: #1EDC62;
 
-/* Status color */
+/* ═══════『 🟢 Status 』═══════ */
+
+/* Online - Default value : #43B581 */
 --online: #43B581;
+
+/* Iddle - Default value : #FAA61A */
 --iddle: #FAA61A;
+
+/* Do Not Disturb - Default value : #F04747 */
 --dnd: #F04747;
+
+/* Offline - Default value : #747F8D */
 --offline: #747F8D;
 
-/* Circles next to role names */
+/* Streaming - Default value : #593695 */
+--streaming: #593695;
+
+/* ═══════『 🔰 User popout 』═══════ */
+
+/* Playing wave color */
+--playing: #66c0f4;
+
+/* Listening wave color */
+--listening: #1ed769;
+
+/* Role circle - Default value : 5px */
 --role-circle: 3px;
 
-/* Tooltips */
---tooltips: none; /* Set it to "none" if you don't want it */
+/* ═══════『 🗑️ Discord logo 』═══════
+*   Set it to "block" if you still want it */
 
-/* Discord logo */
---discord-logo: none; /* Set it to "block" if you want it */
+--discord-logo: block;
 
 }
  
- 
-
-
-/* Variables */
-.group-spacing-0 {
-  --f-msg-spacing: 20px;
-}
-
-.group-spacing-4 {
-  --f-msg-spacing: 25px;
-}
-
-.group-spacing-8 {
-  --f-msg-spacing: 30px;
-}
-
-.group-spacing-16 {
-  --f-msg-spacing: 40px;
-}
-
-.group-spacing-24 {
-  --f-msg-spacing: 50px;
-}
-
 .theme-dark {
     --background-tertiary: 								#0a0a0a;
     --background-secondary: 							#131313;
@@ -134,7 +165,6 @@
     --header-secondary: #b1b5b9;
     --text-normal: #8e9297;
 }
- 
 
 /* Message group border */
 [class*="group-spacing"] div[class*="groupStart"] {
@@ -246,4 +276,25 @@ main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"
 
 main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"][class*="isUnread"] > span[class*="unreadPill"] svg {
   display: none;
+}
+
+/* Variables */
+.group-spacing-0 {
+  --f-msg-spacing: 20px;
+}
+
+.group-spacing-4 {
+  --f-msg-spacing: 25px;
+}
+
+.group-spacing-8 {
+  --f-msg-spacing: 30px;
+}
+
+.group-spacing-16 {
+  --f-msg-spacing: 40px;
+}
+
+.group-spacing-24 {
+  --f-msg-spacing: 50px;
 }
