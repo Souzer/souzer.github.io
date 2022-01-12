@@ -1,5 +1,5 @@
-
 @import "https://nyri4.github.io/Comfy/betterdiscord/main.css";
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/bettterInvites.css);
 
 /* If you don't like one of those variables until "Other settings" you can delete them or you can also
     try to change those if you have some css knowledge */
@@ -11,10 +11,13 @@
 /* Better Spotify plugin seek bar */
 .container-6sXIoE { border-bottom: none !important; padding-top: 0 !important; margin: 0 !important;}
 .container-6sXIoE .timeline-UWmgAx { position: absolute !important; left: 0px !important;width: 240px !important; height: 53px !important;margin: 0;-webkit-mask-image: linear-gradient(0.25turn, #0008, #0002) !important;mask-image: linear-gradient(0.25turn, #0008, #0002) !important;border-radius: 0 !important;}.bar-g2ZMIm .barFill-Dhkah7 { border-radius: 0 !important;}.container-6sXIoE.maximized-vv2Wr0 .bar-g2ZMIm { height: 87px !important;}.container-6sXIoE .button-14-BFJ:hover { background-color: transparent !important;}.barFill-Dhkah7, .timeline-UWmgAx:hover .barFill-Dhkah7 { background: var(--spotify-color) !important;}.inner-WRV6k5 { z-index: 1 !important;}.barText-lmqc5O, .grabber-7sd5f5 { display: none !important;}.container-6sXIoE .bar-g2ZMIm { width: 100% !important; height: 100% !important; margin-bottom: 0 !important;}    
+
 .reaction-1hd86g.reactionMe-wv5HKu {
     background-color: rgba(92, 37, 70.1);
 }
-
+.reactionSelected-1aMb2K {
+  background-color: #6e85d32;
+}
 :root {
 /* -- Others settings -- */
 
@@ -37,11 +40,8 @@
 /* Avatar width in modals */
 --avatar-width: 173px;
 
-/* Change bonfire in modals */
---bonfire: url('https://my.catgirls.forsale/kxolV428.gif');
-
 /* Colored emoji picker */
---colored-emoji: grayscale(0%); /* Change the value to "100%" if you want the basic one */
+--colored-emoji: grayscale(100%); /* Change the value to "100%" if you want the basic one */
 
 /* Mention color */
 --mention-color: #f04731;
@@ -71,49 +71,15 @@
 --role-circle: 3px;
 
 /* Tooltips */
---tooltips: block; /* Set it to "none" if you don't want it */
+--tooltips: none; /* Set it to "none" if you don't want it */
 
 /* Discord logo */
 --discord-logo: none; /* Set it to "block" if you want it */
 
 }
  
-.theme-dark {
-    --background-tertiary: 								#0a0a0a;
-    --background-secondary: 							#131313;
-    --background-secondary-alt: 						#0f0f0f;
-    --background-primary: 								#161516;
-    --background-mobile-primary: 						#23283d;
-    --background-mobile-secondary: 						#1e2233;
-    --channeltextarea-background: 						#252525;
-    --background-accent: 								#323232;
-    --background-message-hover: 						transparent;
-    --background-modifier-hover: 						#382733;
-    --background-modifier-active: 						#1a1e2e;
-    --background-modifier-selected: 					#5c4053;
-    --deprecated-card-bg: 								#323232;
-    --background-floating: 								#0a0a0a;
-    --deprecated-quickswitcher-input-background:		#252525;
-    --elevation-low: 									none;
-    --scrollbar-auto-thumb: 							#784c6b;
-    --scrollbar-auto-track: 							#382733;
-    --scrollbar-thin-thumb: 							#141925;
-    --activity-card-background: 						#252525;
-	
-}		
  
-.theme-light { /* I don't support light theme it's just for the "Create a server" popup */
-    --background-tertiary: #252525;
-    --background-secondary: #1e2233;
-    --background-secondary-alt: #191f2e;
-    --background-primary: #23283d;
-    --background-accent: #6E85D3;
-    --background-modifier-hover: #262b41;
-    --background-modifier-active: #262b41;
-    --header-primary: #fff;
-    --header-secondary: #b1b5b9;
-    --text-normal: #8e9297;
-}
+
 
 /* Variables */
 .group-spacing-0 {
@@ -135,6 +101,41 @@
 .group-spacing-24 {
   --f-msg-spacing: 50px;
 }
+
+.theme-dark {
+    --background-tertiary: 								#0a0a0a;
+    --background-secondary: 							#131313;
+    --background-secondary-alt: 						#0f0f0f;
+    --background-primary: 								#161516;
+    --background-mobile-primary: 						#23283d;
+    --background-mobile-secondary: 						#1e2233;
+    --channeltextarea-background: 						#252525;
+    --background-accent: 								#323232;
+    --background-message-hover: 						transparent;
+    --deprecated-card-bg: 								#323232;
+    --background-floating: 								#0a0a0a;
+    --deprecated-quickswitcher-input-background:		#252525;
+    --elevation-low: 									none;
+    --scrollbar-auto-thumb: 							#784c6b;
+    --scrollbar-auto-track: 							#382733;
+    --scrollbar-thin-thumb: 							#141925;
+    --activity-card-background: 						#252525;
+}		
+ 
+.theme-light { /* I don't support light theme it's just for the "Create a server" popup */
+    --background-tertiary: #252525;
+    --background-secondary: #1e2233;
+    --background-secondary-alt: #191f2e;
+    --background-primary: #23283d;
+    --background-accent: #6E85D3;
+    --background-modifier-hover: #262b41;
+    --background-modifier-active: #262b41;
+    --header-primary: #fff;
+    --header-secondary: #b1b5b9;
+    --text-normal: #8e9297;
+}
+ 
+
 /* Message group border */
 [class*="group-spacing"] div[class*="groupStart"] {
   margin-top: var(--f-msg-spacing);
@@ -246,4 +247,3 @@ main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"
 main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"][class*="isUnread"] > span[class*="unreadPill"] svg {
   display: none;
 }
-
