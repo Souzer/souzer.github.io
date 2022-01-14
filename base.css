@@ -235,6 +235,11 @@
     pointer-events: unset;
 }
 
+/* selection highlight colour */
+::selection {
+    background-color: #784c6b
+}
+
 /*connections border colour*/
 .connectedAccountIcon-2vls0t ~ div::before {
     content: "";
@@ -324,7 +329,10 @@
      border: 1px solid transparent;
       border-radius: 3px; /* Edit this in order to change the shape of the text box */
 }
-
+/*hide gift button*/
+.buttons-uaqb-5 > .button-f2h6uQ:not(.BD-TeX-plugin-button) > :not(.quickToggleButton-P2xDh8) {
+  display: none;
+}
 
 /* Message group border */
 [class*="group-spacing"] div[class*="groupStart"] {
