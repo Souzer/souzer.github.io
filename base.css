@@ -129,7 +129,7 @@
 /* ═══════『 🗑️ Discord logo 』═══════
 *   Set it to "block" if you still want it */
 
---discord-logo: block;
+--discord-logo: none;
 
 }
  
@@ -164,6 +164,172 @@
     --header-primary: #fff;
     --header-secondary: #b1b5b9;
     --text-normal: #8e9297;
+}
+
+/*change box type*/
+.bd-toast {
+    background-color: var(--background-tertiary) !important;
+    border-radius: 32px;
+    margin-bottom: 12px;
+    line-height: 24px;
+    padding: 16px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 16px !important;
+    font-weight: normal !important;
+}
+
+.bd-toast.toast-success.icon {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjEuMjg0ODUgMy40NjkyNCAyMS44MzYzNTAwMDAwMDAwMDMgMTcuNjUyMTYwMDAwMDAwMDAyIj4KICA8cGF0aCBkPSJNOS4wMDA0MyAxNC4wNDkyTDE5LjU5MDQgMy40NjkyNEwyMy4xMjEyIDcuMDAwMDZMOC45OTk5MyAyMS4xMjE0TDEuMjg0ODUgMTMuNDA2M0w0LjgzMzY3IDkuODgyNDhMOS4wMDA0MyAxNC4wNDkyWiIgZmlsbD0iIzNCQTU1QyIvPgo8L3N2Zz4=") !important;
+}
+
+.bd-toast.icon {
+    padding-left: 30px !important;
+}
+
+.bd-toast.toast-danger.icon,
+.bd-toast.toast-error.icon {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjcgMTAgNiA2Ij4KICA8cGF0aCBkPSJNIDEyIDEwIEwgMTMgMTEgTCAxMSAxMyBMIDEzIDE1IEwgMTIgMTYgTCAxMCAxNCBMIDggMTYgTCA3IDE1IEwgOSAxMyBMIDcgMTEgTCA4IDEwIEwgMTAgMTIgWiIgZmlsbD0iI2YwNDc0NyIvPgo8L3N2Zz4=") !important;
+    padding-left: 35px !important;
+}
+/*remove server banners*/
+.animatedContainer-2laTjx, .content-2a4AW9 [style="height: 84px;"], .bannerImage-ubW8K-, .animatedBannerHoverLayer-129r1v{
+    display: none; 
+}
+.hasBanner-2IrYih .header-3OsQeK, .hasBanner-2IrYih .header-3OsQeK::hover, .hasBanner-2IrYih{
+    color: var(--header-primary);
+}
+/* jump to message */
+[title^="https://discord.com/channels/"], [title^="https://ptb.discord.com/channels/"], [title^="https://canary.discord.com/channels/"] {
+  line-height: 0;
+  font-size: 0;
+  text-decoration-color: #fff !important;
+}
+[title^="https://discord.com/channels/"]::before, [title^="https://ptb.discord.com/channels/"]::before, [title^="https://canary.discord.com/channels/"]::before {
+  content: "Jump to message link ♡";
+  font-size: 16px;
+  user-select: text;
+  font-weight: 500;
+  transition: background-color 50ms ease-out, color 50ms ease-out;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0 2px;
+  background: hsla(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%, 0.3);
+  color: hsl(236, calc(var(--saturation-factor, 1) * 83.3%), 92.9%);
+}
+[title^="https://discord.com/channels/"]:hover::before, [title^="https://ptb.discord.com/channels/"]:hover::before, [title^="https://canary.discord.com/channels/"]:hover::before {
+  background-color: hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%);
+  color: #fff;
+}
+
+/* blur spoilers*/
+.spoilerText-27bIiA,
+.spoilerText-27bIiA.hidden-3B-Rum {
+    background-color: transparent !important;
+}
+
+.spoilerText-27bIiA.hidden-3B-Rum > .inlineContent-2YnoDy {
+    opacity: 1 !important;
+    filter: blur(3px);
+    pointer-events: unset;
+}
+
+/*connections border colour*/
+.connectedAccountIcon-2vls0t ~ div::before {
+    content: "";
+    top: 0; bottom: 0; left: 0; right: 0;
+    border: 1px solid var(--border-color);
+    position: absolute;
+    display: block;
+    pointer-events: none;
+}
+
+.connectedAccount-1xKpli {
+    overflow: hidden;
+    position: relative;
+}
+/* Spotify */
+.connectedAccountIcon-2vls0t[src="/assets/eaeac24163b35f7526704a3d9b3c7722.svg"] ~ div::before {--border-color: #1ED760;}
+/* Github */
+.connectedAccountIcon-2vls0t[src="/assets/6a853b4c87fce386cbfef4a2efbacb09.svg"] ~ div::before {--border-color: #fff;}
+/* Twitch */
+.connectedAccountIcon-2vls0t[src="/assets/ca71e0b8818221eea1deebbaf8dc6518.svg"] ~ div::before {--border-color: #563194;}
+/* Twitter */
+.connectedAccountIcon-2vls0t[src="/assets/85cf2b49d2a185c98ec8e383ad5a05d6.svg"] ~ div::before {--border-color: #0099E4;}
+/* XBOX */
+.connectedAccountIcon-2vls0t[src="/assets/1fa6585cbb8c0fe21188e26d19fc6609.svg"] ~ div::before {--border-color: #5EC220;}
+/* Reddit */
+.connectedAccountIcon-2vls0t[src="/assets/f3224f560c8f5974355596a4f7e9ce19.svg"] ~ div::before {--border-color: #FF4500;}
+/* Battle.net */
+.connectedAccountIcon-2vls0t[src="/assets/37f15a06d062bdd0fc252d2b35d0b0bb.svg"] ~ div::before {--border-color: #0099E4;}
+/* Steam */
+.connectedAccountIcon-2vls0t[src="/assets/d897626dfa2016ea3ad0af935acb6070.svg"] ~ div::before {--border-color: #000000;}
+/* YouTube */
+.connectedAccountIcon-2vls0t[src="/assets/57ee9535485efae7eb923ed4893abb57.svg"] ~ div::before {--border-color: #D9252A;}
+/* Facebook */
+.connectedAccountIcon-2vls0t[src="/assets/32045743cb7670855ae726743c949e0c.svg"] ~ div::before {--border-color: #1877F2;}
+/* LOL */
+.connectedAccountIcon-2vls0t[src="/assets/94dc6f30a819026fa295d85f1f72b4ab.svg"] ~ div::before {--border-color: #CEA146;}
+
+
+/*category containers*/
+.containerDefault-3TQ5YN {
+  margin-top: .2em;
+  margin-bottom: .2em;
+  padding: 0px !important;
+  height: 1.4em !important;
+  border: 1px solid RGBA(0, 0, 0, 0.5);
+  border-radius: 1px;
+  background-color: RGBA(0, 0, 0, 0.4);
+}
+/*channel containers*/
+.content-1gYQeQ {
+  background-color: RGBA(0, 0, 0, 0.1);
+  border: 2px solid var(--background-tertiary);
+  padding: 2.5px;
+}
+.iconItem-1EjiK0 {
+  margin-left: 0px !important;
+  padding: 1px 0px !important;
+}
+.mainContent-20q_Hp{
+  padding: 0px 2px !important;
+}
+
+/* Discord Message box v2 */
+:root {
+    --color-brand-lighter: #784c6b;
+}
+.input-2z42oC,
+.scrollableContainer-15eg7h {
+    background-color: #292929;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    border: 1px solid transparent;
+    outline: none;
+}
+.input-2z42oC:hover,
+.scrollableContainer-15eg7h:hover {
+    border-color: #784c6b;
+     background-color: #2e2c2c;
+      box-shadow: 0px 0px 1px 1px #784c6b; /*remove this to remove the glow*/
+}
+.input-cIJ7To:focus-within,
+.scrollableContainer-15eg7h:focus-within {
+    background-color: #2e2c2c;
+     border-color: var(--color-brand-lighter);
+      box-shadow: 0px 0px 1px 1px #784c6b; /*remove this to remove the glow*/
+}
+.scrollableContainer-15eg7h {
+     border: 1px solid transparent;
+      border-radius: 3px; /* Edit this in order to change the shape of the text box */
+}
+.jumpToPresentBar-1cEnH0{
+    border: 1px solid transparent;
+     border-radius: 5px;
+      width: 370px;
+       margin-left: 1px;
+        margin-bottom: -3px!important;
 }
 
 /* Message group border */
