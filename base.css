@@ -466,3 +466,58 @@ main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"
 .group-spacing-24 {
   --f-msg-spacing: 50px;
 }
+
+
+
+/* souzer badge + name */
+.userPopout-2j1gM4[data-user-id="161537526253748224"] .profileBadges-2pItdR::before, .userPopout-2j1gM4[vz-user-id="161537526253748224"] .profileBadges-2pItdR::before {
+  content: "";
+  position: relative;
+  width: 20px;
+  height: 17px;
+  margin: 1.5px 6px 0 0;
+  pointer-events: none;
+  background: url("https://cdn.discordapp.com/emojis/755151300416766092.webp") center/100% no-repeat;
+}
+
+.userPopout-2j1gM4[data-user-id="161537526253748224"] .username-3JLfHz,
+.userPopout-2j1gM4[vz-user-id="161537526253748224"] .username-3JLfHz,
+.root-8LYsGj[data-user-id="161537526253748224"] .username-3JLfHz {
+  color: transparent !important;
+  font-weight: bold;
+  background-size: 300%;
+  -webkit-animation: shine-reversed 5s linear infinite;
+          animation: shine-reversed 5s linear infinite;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, #55CDFC 0%, #FFFFFF 50%, #F7A8B8 100%);
+}
+
+@-webkit-keyframes shine {
+  to {
+    background-position: 300% center;
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position: 300% center;
+  }
+}
+@-webkit-keyframes shine-reversed {
+  to {
+    background-position: -300% center;
+  }
+}
+@keyframes shine-reversed {
+  to {
+    background-position: -300% center;
+  }
+}
+@keyframes gradient-border {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+  }
