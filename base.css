@@ -467,7 +467,18 @@ main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"
   --f-msg-spacing: 50px;
 }
 
-
+/* Replace Wandering Cubes Spinner with gif*/
+span[class="inner-26JK4f"]:after {
+    background-image: url('https://cdn.discordapp.com/emojis/830969050665451610.gif');
+    background-size: cover;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    content:"";
+}
+span[class="inner-26JK4f"] > *{
+    display: none;
+}
 
 /* souzer badge + name */
 .userPopout-2j1gM4[data-user-id="161537526253748224"] .profileBadges-2pItdR::before, .userPopout-2j1gM4[vz-user-id="161537526253748224"] .profileBadges-2pItdR::before {
@@ -490,6 +501,19 @@ main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"
           animation: shine-reversed 5s linear infinite;
   -webkit-background-clip: text;
   background-image: linear-gradient(90deg, #55CDFC 0%, #FFFFFF 50%, #F7A8B8 100%);
+}
+
+/* elise name */
+.userPopout-2j1gM4[data-user-id="338822519215882261"] .username-3JLfHz,
+.userPopout-2j1gM4[vz-user-id="338822519215882261"] .username-3JLfHz,
+.root-8LYsGj[data-user-id="338822519215882261"] .username-3JLfHz {
+  color: transparent !important;
+  font-weight: bold;
+  background-size: 300%;
+  -webkit-animation: shine-reversed 5s linear infinite;
+          animation: shine-reversed 5s linear infinite;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, #1a0979 0%, #240000 50%, #ff00e4 100%);
 }
 
 @-webkit-keyframes shine {
