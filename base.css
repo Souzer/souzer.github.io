@@ -1,5 +1,7 @@
 @import url(https://nyri4.github.io/Comfy/betterdiscord/main.css);
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/bettterInvites.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
+
 
 /* ═══════『 ⚠️・Important tips 』═══════
 *
@@ -20,7 +22,7 @@
 :root { 
 
 /* ═══════『 💨 ・ Animations 』- If you don't want a high CPU usage, comment the line below */
-/* --disable-animations: 9s channel-unread infinite; */
+--disable-animations: 2s channel-unread infinite;
 
 /* ═══════『 🖼️ ・ Background in the status picker 』═══════
 *
@@ -544,4 +546,20 @@ span[class="inner-26JK4f"] > *{
   to {
     background-position: 100% 0;
   }
-  }
+  
+  /* Messages Slide In Chat */
+@keyframes slide-up {
+    0% {
+        opacity: 10;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 10;
+        transform: translateX(0px);
+    }
+}
+.message-2CShn3 {
+  animation: slide-up 0.5s ease;
+}
+
+
