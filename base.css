@@ -22,9 +22,6 @@
 /* ═══════『 💨 ・ Animations 』- If you don't want a high CPU usage, comment the line below */
 <<<<<<< HEAD
 /*--disable-animations: 2s channel-unread infinite;*/
-=======
-/* --disable-animations: 9s channel-unread infinite; */
->>>>>>> parent of 8fb2d42 (Update base.css)
 
 /* ═══════『 🖼️ ・ Background in the status picker 』═══════
 *
@@ -558,7 +555,7 @@ span[class="inner-26JK4f"] > *{
   to {
     background-position: 100% 0;
   }
-<<<<<<< HEAD
+
   
   /* Messages Slide In Chat */
 @keyframes slide-up {
@@ -576,6 +573,3 @@ span[class="inner-26JK4f"] > *{
 }
 }
 
-=======
-  }
->>>>>>> parent of 8fb2d42 (Update base.css)
