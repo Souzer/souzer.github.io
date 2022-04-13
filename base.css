@@ -22,8 +22,15 @@
 :root { 
 
 /* ═══════『 💨 ・ Animations 』- If you don't want a high CPU usage, comment the line below */
---disable-animations: 2s channel-unread infinite;
+/*--disable-animations: 2s channel-unread infinite;*/
+.userInfoSection-3her-v { 
+      padding: 0 12px 16px 16px;
+      background-color: var(--background-tertiary);
+}
 
+.reaction-2A2y9y.reactionMe-3I9gFK {
+border-color:#1d1c24;background:linear-gradient(90deg, #4a2635 50%, #4a2635 53%);
+}
 /* ═══════『 🖼️ ・ Background in the status picker 』═══════
 *
 *   ➥ Image : Replace the url of the current image with yours
@@ -562,10 +569,7 @@ span[class="inner-26JK4f"] > *{
   animation: slide-up 0.5s ease;
 }
 
-.userInfoSection-3her-v { 
-      padding: 0 12px 16px 16px;
-      background-color: var(--background-tertiary);
-}
 
-.reaction-2A2y9y.reactionMe-3I9gFK{
-border-color:#1d1c24;background:linear-gradient(90deg, #4a2635 50%, #4a2635 53%);
+
+
+
