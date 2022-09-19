@@ -1,4 +1,3 @@
-
 /*------------------------------------------------------------
    Theme Import change styles with base.css or base-old.css
       you can't disable this, is the full theme dummy
@@ -18,7 +17,7 @@ Message bubble styles [If you don't want any place a /* in all]
 /* Message Bubble in Left Side */
 /*@import url(https://zuzumi-f.github.io/Discord-11/messagebubbleleft.css);*/
 /* Default Message Bubble */
-@import url(https://zuzumi-f.github.io/Discord-11/messagebubble11.css);
+/*@import url(https://zuzumi-f.github.io/Discord-11/messagebubble11.css);
 /* New Message Bubble */
 /* @import url(https://zuzumi-f.github.io/Discord-11/messagebubblenew.css); */
 
@@ -51,7 +50,7 @@ Message bubble styles [If you don't want any place a /* in all]
     --background-mobile-secondary: 						#1e2233;
     --channeltextarea-background: 						#252525;
     --background-accent: 								#323232;
-    --background-message-hover: 						transparent;
+    --background-message-hover: 						#121212;
     --deprecated-card-bg: 								#323232;
     --background-floating: 								#0a0a0a;
     --deprecated-quickswitcher-input-background:		#252525;
@@ -200,12 +199,88 @@ span[class="inner-26JK4f"] > *{
     border-radius: 15%;
 }
 
-/* My account */
-#app-mount .accountProfileCard-lbN7n- .banner-1YaD3N[style^="background-image: "] {
-    height: 250px;
+
+/* Variables */
+.group-spacing-0 {
+  --f-msg-spacing: 20px;
 }
 
-#app-mount .accountProfileCard-lbN7n- .avatar-3mTjvZ foreignObject {
-    mask: ;
-    border-radius: 15%;
+.group-spacing-4 {
+  --f-msg-spacing: 25px;
+}
+
+.group-spacing-8 {
+  --f-msg-spacing: 30px;
+}
+
+.group-spacing-16 {
+  --f-msg-spacing: 40px;
+}
+
+.group-spacing-24 {
+  --f-msg-spacing: 50px;
+}
+
+/* Message group border */
+[class*="group-spacing"] div[class*="groupStart"] {
+  margin-top: var(--f-msg-spacing)!important;
+}
+
+[class*="group-spacing"] div[class*="groupStart"]::after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--f-msg-spacing) / 2);
+  left: 20px;
+  right: 20px;
+  border-bottom: thin solid var(--background-modifier-accent);
+}
+
+div[class^="divider-"] + [class*="groupStart"],
+div[class*="divider-"] + div[class*="backgroundFlash"] > div[class*="groupStart"] {
+  margin-top: 0px!important;
+}
+
+div[class^="divider-"] + [class*="groupStart"]::after,
+div[class*="divider-"] + div[class*="backgroundFlash"] > div[class*="groupStart"]::after {
+  display: none;
+}
+
+
+/* Text Padding */
+div[class*="message-"][class*="wrapper-"] {
+  padding: 0;
+  padding-left: 80px!important;
+  padding-right: 10px!important;
+}
+
+div[class*="cozyMessage"] > div[class*="contents"] > div[class*="markup"] {
+  padding-left: 80px;
+  margin-left: -80px;
+}
+
+/* Mentions */
+div[class*="message"][class*="mentioned"]::before {
+  display: none;
+}
+
+div[class*="cozyMessage"][class*="mentioned"] > div[class*="contents"] > div[class*="markup"] {
+  background-color: var(--background-mentioned);
+  border-radius: 0 3px 3px 0;
+  position: relative;
+  margin: -.1rem -.2rem .1rem;
+  padding: .1rem .2rem;
+  padding-left: calc(6px + .2rem);
+  margin-left: -6px;
+}
+
+div[class*="cozyMessage"][class*="mentioned"] > div[class*="contents"] > div[class*="markup"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 2px;
+  background-color: rgba(250,166,26,.2);
+  border-left: 4px solid #faa61a;
+  border-radius: 3px 0 0 3px;
+  height: 100%;
 }
