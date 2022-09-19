@@ -1,139 +1,54 @@
-@import url(https://comfy-themes.github.io/Discord/betterdiscord/main.css);
-@import url(https://maendisease.github.io/BetterDiscordStuff/css/bettterInvites.css);
+/**
+ * @name Emma theme scuffed
+ * @description meow
+ * @author emme
+ * @version 0.0.1
 
-/* ═══════『 ⚠️・Important tips 』═══════
-*
-*   ➥ To comment or uncomment a line you need to put those "/" and "*" characters as you can see at the beginning and ending of my comments.
-*      (You don't need to put a * at each line like I do, it's just for readability). See more here : https://developer.mozilla.org/en-US/docs/Web/CSS/Comments
-*
-*   ➥ You can play with the values and see how it goes, don't delete "px" after the value if you don't have knowledges in CSS.
-*
-*   ➥ To change the colors, replace the HEX code with the one you picked here : https://htmlcolorcodes.com
 */
 
-/* ═══════『 🚫 ・ No scrollbars 』- Comment the line below if you want the scrollbar back */
-/*@import "https://nyri4.github.io/Comfy/betterdiscord/no-scrollbar.css"; */
+/*------------------------------------------------------------
+   Theme Import change styles with base.css or base-old.css
+      you can't disable this, is the full theme dummy
+------------------------------------------------------------*/
+@import url(https://zuzumi-f.github.io/Discord-11/base.css);
 
-/* ═══════『 🎵 ・ Better SpotifyControls seek bar 』- Comment the line below if you want the scrollbar back */
-/* @import "https://nyri4.github.io/Comfy/betterdiscord/better-spotify.css"; */
+/*--------------------------------------------------------------
+                             Colors
+---------------------------------------------------------------*/
+/*---Change colors with Purple.css, Green.css or Red.css ⬇️⬇️---*/
+@import url(https://zuzumi-f.github.io/Discord-11/colors/Red.css);
 
-:root { 
 
-/* ═══════『 💨 ・ Animations 』- If you don't want a high CPU usage, comment the line below */
-<<<<<<< HEAD
-/*--disable-animations: 2s channel-unread infinite;*/
+/*--------------------------------------------------------------
+Message bubble styles [If you don't want any place a /* in all]
+----------------------------------------------------------------*/
+/* Message Bubble in Left Side */
+/*@import url(https://zuzumi-f.github.io/Discord-11/messagebubbleleft.css);*/
+/* Default Message Bubble */
+@import url(https://zuzumi-f.github.io/Discord-11/messagebubble11.css);
+/* New Message Bubble */
+/* @import url(https://zuzumi-f.github.io/Discord-11/messagebubblenew.css); */
 
-/* ═══════『 🖼️ ・ Background in the status picker 』═══════
-*
-*   ➥ Image : Replace the url of the current image with yours
-*
-*   ➥ Color : Delete the url("https://mywebsite/example.png") and replace it by an HEX color
-*
-*   ℹ️ : This background isn't and cannot be linked to the new Nitro banners or USRBG 
-*/
+/*--------------------------------------------------------------
+                           Glass effect
+         [To see your desk put "none" in --wallpaper-is:
+                               and
+               enable Transparency in BD Settings]
+---------------------------------------------------------------*/
+/*--Yes you can enable/disable this--*/
+/* @import url(https://zuzumi-f.github.io/Discord-11/glass-effect.css); */
 
---status-background: url('https://my.catgirls.forsale/wOHzN312.gif');
-
-/* ═══════『 ⚙️ / 🎤 / 🎧 ・ User button 』═══════
-*
-*   ➥ A higher value will means more space between the icons and a lower ...
-*
-*    ℹ️ : If you want to revert those to the old area, join the support server and check #css-snippets
-*
-*/
-
-/* Spacing - Default value : 8px */
---user-buttons-spacing: 7px;
-
-/* Color - Default value : #096DC0 */
---user-buttons-color: #784c6b;
-
-/* ═══════『 ⭕ Roundness settings 』═══════
-*
-*    ➥ A higher value will means more rounded corners and a lower ...
-*       0 ➜ Square
-*       25 ➜ Circle
-*/
-
-/* Avatars - Default value : 5px */
---avatar-radius: px;  
-
-/* Status - Default value : 3px */
---status-radius: 3px; 
-
-/* Servers - Default value : 8px */
---server-radius: 8px;
-
-/* ═══════『 😃 Colored emoji picker 』═══════
-*   Change the value to "100%" if you want the default one */
-
---colored-emoji: grayscale(0%);
-
-/* ═══════『 📜 Server/channel list 』═══════ */
-
-/* Mention - Default value : #F04747 */
---mention-color: #F04747;
-
-/* Unread - Default value : #7289DA */
---unread-color: #7289DA;
-
-/*  『 🔴 Mention colors in chat 』 */
-
-/* Bar on the right - Default value : #C66262 */
---mention-color-bar: #C66262;
-
-/* Background - Default value : #C662621F */
---mention-color-background: #C662621F;
-
-/* On hover - Default value : #C6626226 */
---mention-color-hover: #C6626226;
-
-/* ═══════『 💬 Chat buttons 』═══════ */
-
-/* Default value : #7289DA */
---chat-buttons: #784c6b;
-
-/* ═══════『 💬 SpotifyControls seek bar 』═══════
-*   ℹ️ : If you don't have the plugin : https://betterdiscord.app/plugin/SpotifyControls */
-
-/* Default value : #1EDC62 */
---spotify-color: #1EDC62;
-
-/* ═══════『 🟢 Status 』═══════ */
-
-/* Online - Default value : #43B581 */
---online: #43B581;
-
-/* Iddle - Default value : #FAA61A */
---iddle: #FAA61A;
-
-/* Do Not Disturb - Default value : #F04747 */
---dnd: #F04747;
-
-/* Offline - Default value : #747F8D */
---offline: #747F8D;
-
-/* Streaming - Default value : #593695 */
---streaming: #593695;
-
-/* ═══════『 🔰 User popout 』═══════ */
-
-/* Playing wave color */
---playing: #66c0f4;
-
-/* Listening wave color */
---listening: #1ed769;
-
-/* Role circle - Default value : 5px */
---role-circle: 3px;
-
-/* ═══════『 🗑️ Discord logo 』═══════
-*   Set it to "block" if you still want it */
-
---discord-logo: none;
-
+:root {
+    --wallpaper-is: url(https://i0.wp.com/hipertextual.com/wp-content/uploads/2021/06/Windows-11-Wallpaper-1-1-scaled.jpg);
+    --blur-size: 24px;
+    --opacity-thing: 0.6;
 }
- 
+
+/*----------------------------------------------------
+                anything else down here
+------------------------------------------------------*/
+
+/* Discord Colors */
 .theme-dark {
     --background-tertiary: 								#0a0a0a;
     --background-secondary: 							#131313;
@@ -152,63 +67,54 @@
     --scrollbar-auto-track: 							#382733;
     --scrollbar-thin-thumb: 							#141925;
     --activity-card-background: 						#252525;
-}		
- 
-.theme-light { /* I don't support light theme it's just for the "Create a server" popup */
-    --background-tertiary: #252525;
-    --background-secondary: #1e2233;
-    --background-secondary-alt: #191f2e;
-    --background-primary: #23283d;
-    --background-accent: #6E85D3;
-    --background-modifier-hover: #262b41;
-    --background-modifier-active: #262b41;
-    --header-primary: #fff;
-    --header-secondary: #b1b5b9;
-    --text-normal: #8e9297;
-}
+	--background-mentioned: 							hsla(50, 76%, 72%, 0.08);
+	--background-mentioned-hover: 						hsla(50, 76%, 72%, 0.04);
 
-.userInfoSection-3her-v { 
-      padding: 0 12px 16px 16px;
-      background-color: var(--background-tertiary);
 }
+/* Top drag */
+.wordmarkWindows-2dq6rw::after {
+content: "Nyacord";}
 
-.reaction-2A2y9y.reactionMe-3I9gFK {
-border-color:#1d1c24;background:linear-gradient(90deg, #4a2635 50%, #4a2635 53%);
-}
 
-/*change box type*/
-.bd-toast {
-    background-color: var(--background-tertiary) !important;
-    border-radius: 32px;
-    margin-bottom: 12px;
-    line-height: 24px;
-    padding: 16px !important;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 16px !important;
-    font-weight: normal !important;
-}
-
-.bd-toast.toast-success.icon {
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjEuMjg0ODUgMy40NjkyNCAyMS44MzYzNTAwMDAwMDAwMDMgMTcuNjUyMTYwMDAwMDAwMDAyIj4KICA8cGF0aCBkPSJNOS4wMDA0MyAxNC4wNDkyTDE5LjU5MDQgMy40NjkyNEwyMy4xMjEyIDcuMDAwMDZMOC45OTk5MyAyMS4xMjE0TDEuMjg0ODUgMTMuNDA2M0w0LjgzMzY3IDkuODgyNDhMOS4wMDA0MyAxNC4wNDkyWiIgZmlsbD0iIzNCQTU1QyIvPgo8L3N2Zz4=") !important;
-}
-
-.bd-toast.icon {
-    padding-left: 30px !important;
-}
-
-.bd-toast.toast-danger.icon,
-.bd-toast.toast-error.icon {
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjcgMTAgNiA2Ij4KICA8cGF0aCBkPSJNIDEyIDEwIEwgMTMgMTEgTCAxMSAxMyBMIDEzIDE1IEwgMTIgMTYgTCAxMCAxNCBMIDggMTYgTCA3IDE1IEwgOSAxMyBMIDcgMTEgTCA4IDEwIEwgMTAgMTIgWiIgZmlsbD0iI2YwNDc0NyIvPgo8L3N2Zz4=") !important;
-    padding-left: 35px !important;
-}
 /*remove server banners*/
 .animatedContainer-2laTjx, .content-2a4AW9 [style="height: 84px;"], .bannerImage-ubW8K-, .animatedBannerHoverLayer-129r1v{
     display: none; 
 }
 .hasBanner-2IrYih .header-3OsQeK, .hasBanner-2IrYih .header-3OsQeK::hover, .hasBanner-2IrYih{
     color: var(--header-primary);
+}
+
+.bannerImage-ubW8K- {
+    width: 100%;
+}
+
+#app-mount .bannerImage-ubW8K-:before {
+    background: none;
+}
+
+.containerDefault-YUSmu3 .content-1gYQeQ {
+    height: 34px;
+}
+
+[class="container-1-ERn5 clickable-vvKY2q hasBanner-2IrYih bannerVisible-Vkyg1I communityInfoVisible-3zc5_s"],
+[class="container-1-ERn5 clickable-vvKY2q selected-1GtAC5 hasBanner-2IrYih bannerVisible-Vkyg1I communityInfoVisible-3zc5_s"] {
+    height: 1px;
+    margin-bottom: 49px;
+}
+
+/* Small Profile */
+.theme-dark .userPopout-2j1gM4 {
+    border: var(--windarkborder1);
+    background: #161516;
+    backdrop-filter: blur(var(--winblur1));
+}
+
+/* Emote Info ChatPopout */
+.theme-dark .popoutContainer-2wbmiM {
+    background: #161516;
+    border: var(--windarkborder4);
+    backdrop-filter: blur(var(--winblur1));
+    border-radius: var(--winrad2);
 }
 /* jump to message */
 [title^="https://discord.com/channels/"], [title^="https://ptb.discord.com/channels/"], [title^="https://canary.discord.com/channels/"] {
@@ -245,236 +151,33 @@ border-color:#1d1c24;background:linear-gradient(90deg, #4a2635 50%, #4a2635 53%)
     pointer-events: unset;
 }
 
-/* selection highlight colour */
-::selection {
-    background-color: #784c6b
+/* Emoji, sticker and gif picker */
+
+.theme-dark .contentWrapper-3vHNP2 {
+    background: #161616;
+    border: var(--windarkborder1);
 }
 
-/*connections border colour*/
-.connectedAccountIcon-2vls0t ~ div::before {
-    content: "";
-    top: 0; bottom: 0; left: 0; right: 0;
-    border: 1px solid var(--border-color);
-    position: absolute;
-    display: block;
-    pointer-events: none;
+/* Message options */
+.wrapper-2vIMkT {
+    border-radius: var(--winrad2);
+}
+.full-motion .wrapper-2vIMkT:hover {
+    -webkit-box-shadow: var(--elevation-low);
+    box-shadow: var(--elevation-low);
 }
 
-.connectedAccount-1xKpli {
-    overflow: hidden;
-    position: relative;
-}
-/* Spotify */
-.connectedAccountIcon-2vls0t[src="/assets/eaeac24163b35f7526704a3d9b3c7722.svg"] ~ div::before {--border-color: #1ED760;}
-/* Github */
-.connectedAccountIcon-2vls0t[src="/assets/6a853b4c87fce386cbfef4a2efbacb09.svg"] ~ div::before {--border-color: #fff;}
-/* Twitch */
-.connectedAccountIcon-2vls0t[src="/assets/ca71e0b8818221eea1deebbaf8dc6518.svg"] ~ div::before {--border-color: #563194;}
-/* Twitter */
-.connectedAccountIcon-2vls0t[src="/assets/85cf2b49d2a185c98ec8e383ad5a05d6.svg"] ~ div::before {--border-color: #0099E4;}
-/* XBOX */
-.connectedAccountIcon-2vls0t[src="/assets/1fa6585cbb8c0fe21188e26d19fc6609.svg"] ~ div::before {--border-color: #5EC220;}
-/* Reddit */
-.connectedAccountIcon-2vls0t[src="/assets/f3224f560c8f5974355596a4f7e9ce19.svg"] ~ div::before {--border-color: #FF4500;}
-/* Battle.net */
-.connectedAccountIcon-2vls0t[src="/assets/37f15a06d062bdd0fc252d2b35d0b0bb.svg"] ~ div::before {--border-color: #0099E4;}
-/* Steam */
-.connectedAccountIcon-2vls0t[src="/assets/d897626dfa2016ea3ad0af935acb6070.svg"] ~ div::before {--border-color: #000000;}
-/* YouTube */
-.connectedAccountIcon-2vls0t[src="/assets/57ee9535485efae7eb923ed4893abb57.svg"] ~ div::before {--border-color: #D9252A;}
-/* Facebook */
-.connectedAccountIcon-2vls0t[src="/assets/32045743cb7670855ae726743c949e0c.svg"] ~ div::before {--border-color: #1877F2;}
-/* LOL */
-.connectedAccountIcon-2vls0t[src="/assets/94dc6f30a819026fa295d85f1f72b4ab.svg"] ~ div::before {--border-color: #CEA146;}
-
-
-/*category containers*/
-.containerDefault-3TQ5YN {
-  margin-top: .2em;
-  margin-bottom: .2em;
-  padding: 0px !important;
-  height: 1.4em !important;
-  border: 1px solid RGBA(0, 0, 0, 0.5);
-  border-radius: 1px;
-  background-color: RGBA(0, 0, 0, 0.4);
-}
-/*channel containers*/
-.content-1gYQeQ {
-  background-color: RGBA(0, 0, 0, 0.1);
-  border: 2px solid var(--background-tertiary);
-  padding: 2.5px;
-}
-.iconItem-1EjiK0 {
-  margin-left: 0px !important;
-  padding: 1px 0px !important;
-}
-.mainContent-20q_Hp{
-  padding: 0px 2px !important;
+/* Live Shape Round */
+.theme-dark .liveShapeRound-2Tgi2d,
+.theme-dark .liveIndicator-2HaEDu,
+.theme-dark .liveIndicator-3bhXBF > .liveLarge-IxMVzY {
+    background-color: #f80d1c !important;
+    color: #FFFFFF !important;
 }
 
-/* Discord Message box v2 */
-:root {
-    --color-brand-lighter: #784c6b;
-}
-.input-2z42oC,
-.scrollableContainer-15eg7h {
-    background-color: #292929;
-    transition: background-color 0.2s ease, border-color 0.2s ease;
-    border: 1px solid transparent;
-    outline: none;
-}
-.input-2z42oC:hover,
-.scrollableContainer-15eg7h:hover {
-    border-color: #784c6b;
-     background-color: #2e2c2c;
-      box-shadow: 0px 0px 1px 1px #784c6b; /*remove this to remove the glow*/
-}
-.input-cIJ7To:focus-within,
-.scrollableContainer-15eg7h:focus-within {
-    background-color: #2e2c2c;
-     border-color: var(--color-brand-lighter);
-      box-shadow: 0px 0px 1px 1px #784c6b; /*remove this to remove the glow*/
-}
-.scrollableContainer-15eg7h {
-     border: 1px solid transparent;
-      border-radius: 3px; /* Edit this in order to change the shape of the text box */
-}
 /*hide gift button*/
 .buttons-uaqb-5 > .button-f2h6uQ:not(.BD-TeX-plugin-button) > :not(.quickToggleButton-P2xDh8) {
   display: none;
-}
-
-/* Message group border */
-[class*="group-spacing"] div[class*="groupStart"] {
-  margin-top: var(--f-msg-spacing);
-}
-
-[class*="group-spacing"] div[class*="groupStart"]::after {
-  content: "";
-  position: absolute;
-  top: calc(-1 * var(--f-msg-spacing) / 2);
-  left: 20px;
-  right: 20px;
-  border-bottom: thin solid var(--background-modifier-accent);
-}
-
-div[class^="divider-"] + [class*="groupStart"],
-div[class*="divider-"] + div[class*="backgroundFlash"] > div[class*="groupStart"] {
-  margin-top: 0px;
-}
-
-div[class^="divider-"] + [class*="groupStart"]::after,
-div[class*="divider-"] + div[class*="backgroundFlash"] > div[class*="groupStart"]::after {
-  display: none;
-}
-
-/* Welcome Message */
-main[class^="chatContent"] > div[class*="messagesWrapper"] div[class*="welcomeMessage"] {
-  padding: 20px 20px 0;
-}
-
-main[class^="chatContent"] > div[class*="messagesWrapper"] div[class*="welcomeMessage"] > div[class*="emptyMessage"] {
-  padding-bottom: 0;
-  border-bottom: none;
-}
-
-main[class^="chatContent"] > div[class*="messagesWrapper"] div[class*="scroller"] > div[class*="placeholder"] + div[class*="container"] {
-  padding: 20px 20px 0;
-}
-
-main[class^="chatContent"] > div[class*="messagesWrapper"] div[class*="scroller"] > div[class*="placeholder"] + div[class*="default"] {
-  margin: 0 20px;
-  border-bottom: none;
-}
-
-/* Beginning of Channel */
-main[class^="chatContent"] > div[class*="messagesWrapper"] #messagesNavigationDescription + div[class^="default"] {
-  margin: 0 20px;
-  border-bottom: 0px;
-}
-
-/* Dividers */
-main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"] {
-  margin: calc(var(--f-msg-spacing) / 2) 20px;
-  top: 0;
-  height: 22px;
-  border-top: 0;
-}
-
-main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"] > span[class*="content"] {
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: 500;
-  padding: 0 8px;
-  background-color: var(--background-primary);
-  border-radius: 0;
-}
-
-main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"] > span::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 0;
-  border-bottom: thin solid;
-  border-color: var(--background-modifier-accent);
-  z-index: -1;
-}
-
-main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"][class*="isUnread"] > span[class*="content"]::after {
-  border-color: currentColor;
-  opacity: .7;
-}
-
-main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"][class*="isUnread"] > span[class*="content"] + span[class*="unreadPill"] {
-  display: none;
-}
-
-main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"][class*="isUnread"] > span[class*="unreadPill"] {
-  position: initial;
-  height: 100%;
-  top: 0;
-  color: #ffffff;
-  font-weight: 600;
-  padding: 0 8px;
-  background-color: var(--background-primary);
-  border-radius: 0;
-  font-size: 0px;
-}
-
-main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"][class*="isUnread"] > span[class*="unreadPill"]::after {
-  font-size: 14px;
-  content: "NEW MESSAGES";
-}
-
-main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"][class*="isUnread"] > span::before {
-  border-color: currentColor;
-  opacity: .7;
-}
-
-main[class^="chatContent"] > div[class^="messagesWrapper"] div[class^="divider-"][class*="isUnread"] > span[class*="unreadPill"] svg {
-  display: none;
-}
-
-/* Variables */
-.group-spacing-0 {
-  --f-msg-spacing: 20px;
-}
-
-.group-spacing-4 {
-  --f-msg-spacing: 25px;
-}
-
-.group-spacing-8 {
-  --f-msg-spacing: 30px;
-}
-
-.group-spacing-16 {
-  --f-msg-spacing: 40px;
-}
-
-.group-spacing-24 {
-  --f-msg-spacing: 50px;
 }
 
 /* Replace Wandering Cubes Spinner with gif*/
@@ -490,87 +193,17 @@ span[class="inner-26JK4f"] > *{
     display: none;
 }
 
-/* souzer badge + name */
-.userPopout-2j1gM4[data-user-id="161537526253748224"] .profileBadges-2pItdR::before, .userPopout-2j1gM4[vz-user-id="161537526253748224"] .profileBadges-2pItdR::before {
-  content: "";
-  position: relative;
-  width: 20px;
-  height: 17px;
-  margin: 1.5px 6px 0 0;
-  pointer-events: none;
-  background: url("https://cdn.discordapp.com/emojis/755151300416766092.webp") center/100% no-repeat;
+/* Public badge go Woosh */
+.communityInfoContainer-1dMVpU {
+    display: none;
 }
 
-.userPopout-2j1gM4[data-user-id="161537526253748224"] .username-3JLfHz,
-.userPopout-2j1gM4[vz-user-id="161537526253748224"] .username-3JLfHz,
-.root-8LYsGj[data-user-id="161537526253748224"] .username-3JLfHz {
-  color: transparent !important;
-  font-weight: bold;
-  background-size: 300%;
-  -webkit-animation: shine-reversed 5s linear infinite;
-          animation: shine-reversed 5s linear infinite;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(90deg, #55CDFC 0%, #FFFFFF 50%, #F7A8B8 100%);
+.container-1NXEtd .content-2a4AW9 > div[style="height: 16px;"]:nth-child(2){
+    display: none;
 }
 
-/* elise name */
-.userPopout-2j1gM4[data-user-id="338822519215882261"] .username-3JLfHz,
-.userPopout-2j1gM4[vz-user-id="338822519215882261"] .username-3JLfHz,
-.root-8LYsGj[data-user-id="338822519215882261"] .username-3JLfHz {
-  color: transparent !important;
-  font-weight: bold;
-  background-size: 300%;
-  -webkit-animation: shine-reversed 5s linear infinite;
-          animation: shine-reversed 5s linear infinite;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(90deg, #1a0979 0%, #240000 50%, #ff00e4 100%);
+.avatar-3QF_VA, .avatar-3QF_VA .mask-1FEkla > foreignObject, .avatar-2Vndt_,.avatar-2Vndt_ .mask-1FEkla > foreignObject, .avatar-2e8lTP, .wrapper-1VLyxH foreignObject {
+    mask: none;
+    border-radius: 15%;
 }
 
-@-webkit-keyframes shine {
-  to {
-    background-position: 300% center;
-  }
-}
-
-@keyframes shine {
-  to {
-    background-position: 300% center;
-  }
-}
-@-webkit-keyframes shine-reversed {
-  to {
-    background-position: -300% center;
-  }
-}
-@keyframes shine-reversed {
-  to {
-    background-position: -300% center;
-  }
-}
-@keyframes gradient-border {
-  from {
-    background-position: 0 0;
-  }
-}
-  to {
-    background-position: 100% 0;
-  }
-
-  
-  /* Messages Slide In Chat */
-@keyframes slide-up {
-    0% {
-        opacity: 10;
-        transform: translateX(20px);
-    }
-    100% {
-        opacity: 10;
-        transform: translateX(0px);
-    }
-
-.message-2CShn3 {
-  animation: slide-up 0.5s ease;
-}
-}
-
-:root .userPopout-2j1gM4 .body-2wLx-E .customStatus-3XAoF9, :root .userPopout-2j1gM4 .body-2wLx-E .userInfoSection-3her-v {padding: 0 0px 16px 0px;}
