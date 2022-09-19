@@ -200,3 +200,12 @@ span[class="inner-26JK4f"] > *{
     border-radius: 15%;
 }
 
+/* My account */
+#app-mount .accountProfileCard-lbN7n- .banner-1YaD3N[style^="background-image: "] {
+    height: 250px;
+}
+
+#app-mount .accountProfileCard-lbN7n- .avatar-3mTjvZ foreignObject {
+    mask: ;
+    border-radius: 15%;
+}
