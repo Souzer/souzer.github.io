@@ -258,3 +258,8 @@ div[class*="cozyMessage"] > div[class*="contents"] > div[class*="markup"] {
   margin-left: -80px;
 }
 
+.theme-dark .emojiPicker-6YCk8a:not(.contentWrapper-3vHNP2 .emojiPicker-6YCk8a) {
+    background: var(--noise256), var(--windark-box1);
+    border: var(--windarkborder1);
+	background-color: #161616
+}
