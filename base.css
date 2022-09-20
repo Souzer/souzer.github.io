@@ -258,29 +258,3 @@ div[class*="cozyMessage"] > div[class*="contents"] > div[class*="markup"] {
   margin-left: -80px;
 }
 
-/* Mentions */
-div[class*="message"][class*="mentioned"]::before {
-  display: none;
-}
-
-div[class*="cozyMessage"][class*="mentioned"] > div[class*="contents"] > div[class*="markup"] {
-  background-color: var(--background-mentioned);
-  border-radius: 0 3px 3px 0;
-  position: relative;
-  margin: -.1rem -.2rem .1rem;
-  padding: .1rem .2rem;
-  padding-left: calc(6px + .2rem);
-  margin-left: -6px;
-}
-
-div[class*="cozyMessage"][class*="mentioned"] > div[class*="contents"] > div[class*="markup"]::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  width: 2px;
-  background-color: rgba(250,166,26,.2);
-  border-left: 4px solid #faa61a;
-  border-radius: 3px 0 0 3px;
-  height: 100%;
-}
