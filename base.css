@@ -21,20 +21,6 @@ Message bubble styles [If you don't want any place a /* in all]
 /* New Message Bubble */
 /* @import url(https://zuzumi-f.github.io/Discord-11/messagebubblenew.css); */
 
-/*--------------------------------------------------------------
-                           Glass effect
-         [To see your desk put "none" in --wallpaper-is:
-                               and
-               enable Transparency in BD Settings]
----------------------------------------------------------------*/
-/*--Yes you can enable/disable this--*/
-/* @import url(https://zuzumi-f.github.io/Discord-11/glass-effect.css); */
-
-:root {
-    --wallpaper-is: url(https://i0.wp.com/hipertextual.com/wp-content/uploads/2021/06/Windows-11-Wallpaper-1-1-scaled.jpg);
-    --blur-size: 24px;
-    --opacity-thing: 0.6;
-}
 
 /*----------------------------------------------------
                 anything else down here
@@ -194,10 +180,6 @@ span[class="inner-26JK4f"] > *{
     display: none;
 }
 
-.avatar-3QF_VA, .avatar-3QF_VA .mask-1FEkla > foreignObject, .avatar-2Vndt_,.avatar-2Vndt_ .mask-1FEkla > foreignObject, .avatar-2e8lTP, .wrapper-1VLyxH foreignObject {
-    mask: none;
-    border-radius: 15%;
-}
 
 
 /* Variables */
@@ -263,3 +245,4 @@ div[class*="cozyMessage"] > div[class*="contents"] > div[class*="markup"] {
     border: var(--windarkborder1);
 	background-color: #161616
 }
+
