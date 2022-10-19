@@ -53,6 +53,15 @@ Message bubble styles [If you don't want any place a /* in all]
 .wordmarkWindows-2dq6rw::after {
 content: "Nyacord";}
 
+/*Unred Message Colours */
+.modeUnread-3Cxepe .content-1gYQeQ:before {
+    height: 8px;
+    background-color: hsl(0, 87%, 65%);
+
+}
+.modeUnread-3Cxepe .name-28HaxV {
+    color: #FFFFFF;
+}
 
 /*remove server banners*/
 .animatedContainer-2laTjx, .content-2a4AW9 [style="height: 84px;"], .bannerImage-ubW8K-, .animatedBannerHoverLayer-129r1v{
@@ -77,7 +86,7 @@ content: "Nyacord";}
 [class="container-1-ERn5 clickable-vvKY2q hasBanner-2IrYih bannerVisible-Vkyg1I communityInfoVisible-3zc5_s"],
 [class="container-1-ERn5 clickable-vvKY2q selected-1GtAC5 hasBanner-2IrYih bannerVisible-Vkyg1I communityInfoVisible-3zc5_s"] {
     height: 1px;
-    margin-bottom: 49px;
+    margin-bottom: 2px;
 }
 
 /* Small Profile */
