@@ -1,31 +1,24 @@
+
 /*------------------------------------------------------------
-   Theme Import change styles with base.css or base-old.css
       you can't disable this, is the full theme dummy
 ------------------------------------------------------------*/
 @import url(https://zuzumi-f.github.io/Discord-11/base.css);
 
 /*--------------------------------------------------------------
-                             Colors
+                           Settings
 ---------------------------------------------------------------*/
-/*---Change colors with Purple.css, Green.css or Red.css ⬇️⬇️---*/
-@import url(https://zuzumi-f.github.io/Discord-11/colors/Red.css);
-
-
-/*--------------------------------------------------------------
-Message bubble styles [If you don't want any place a /* in all]
-----------------------------------------------------------------*/
-/* Message Bubble in Left Side */
-/*@import url(https://zuzumi-f.github.io/Discord-11/messagebubbleleft.css);*/
-/* Default Message Bubble */
-/*@import url(https://zuzumi-f.github.io/Discord-11/messagebubble11.css);
-/* New Message Bubble */
-/* @import url(https://zuzumi-f.github.io/Discord-11/messagebubblenew.css); */
+:root {
+    --wallpaper-is: url(https://wallpapercave.com/wp/wp6051467.jpg); /* Wallpaper - Replace de url only */
+    --blur-size: 24px; /* Amount of blur in pixels [24px is default] */
+    --opacity-thing: 0.6; /* Value from 0 to 1 [0.6 is default] */
+    --server-size: 48px; /* The size of the server icons [48px is default] */
+    --hue-color: 206; /* Hue is the first part of HSL(Hue, Saturation, Lightness) [206 is default]. This value will change the accent color (That blue color in most buttons) */
+}
 
 
 /*----------------------------------------------------
                 anything else down here
 ------------------------------------------------------*/
-
 /* Discord Colors */
 .theme-dark {
     --background-tertiary: 								#0a0a0a;
@@ -56,11 +49,11 @@ content: "Nyacord";}
 /*Unred Message Colours */
 .modeUnread-3Cxepe .content-1gYQeQ:before {
     height: 8px;
-    background-color: hsl(0, 87%, 65%);
+    background-color: hsl(206, 87%, 65%);
 
 }
 .modeUnread-3Cxepe .name-28HaxV {
-    color: #f3b4a6;
+    color: #ffffff;
 }
 
 /*remove server banners*/
