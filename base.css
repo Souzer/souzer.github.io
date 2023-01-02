@@ -175,6 +175,12 @@
 .listItemWrapper-3d87LP,
 .listItem-3SmSlK [data-dnd-name] {
 height: 45px;}
+
+
 .communityInfoContainer-1dMVpU {
+    display: none;
+}
+
+.container-1NXEtd .content-2a4AW9 > div[style="height: 16px;"]:nth-child(2){
     display: none;
 }
