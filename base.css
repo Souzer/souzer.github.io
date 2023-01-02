@@ -35,7 +35,7 @@
       --chat-bubble: 1; /* 1 to enable chat bubbles, 0 to disable chat bubbles */
 
     --chat-bubble-background-color: #1f1d27a1; /* Background Color of chat bubbles | #1f1d27a1 */
-    --chat-bubble-border-color: #71797E; /* Chat bubble border | [color] to enable - none to disable */
+    --chat-bubble-border-color: black; /* Chat bubble border | [color] to enable - none to disable */
     --chat-bubble-code-background-color: var(--background-secondary-alt); /* Chat bubble background color for Code Messages | var(--background-secondary-alt) */
 
     --chat-bubble-max-width: 99%; /* Max width for chat bubble */
