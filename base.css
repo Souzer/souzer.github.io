@@ -189,3 +189,9 @@ height: 45px;}
 {
     display: none;
 }
+
+/* nitro button */
+.buttons-uaqb-5 > .button-f2h6uQ:not(.BD-TeX-plugin-button) > :not(.quickToggleButton-P2xDh8)
+{
+    display: none;
+}
