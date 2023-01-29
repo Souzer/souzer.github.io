@@ -184,3 +184,8 @@ height: 45px;}
 .container-1NXEtd .content-2a4AW9 > div[style="height: 16px;"]:nth-child(2){
     display: none;
 }
+
+.buttons-uaqb-5 > .button-f2h6uQ:not(.BD-TeX-plugin-button) > :not(.quickToggleButton-P2xDh8)
+{
+    display: none;
+}
