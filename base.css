@@ -134,6 +134,7 @@
 .spoilerText-2G40u0.hidden-2lQZ5q>.inlineContent-2RshAT {
   opacity: 1;
   filter: blur(2px);
+  pointer-events: unset;
 }
 
 
