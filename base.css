@@ -104,32 +104,6 @@
   display: none;
 }
 
-/*remove server banners*/
-.animatedContainer-2laTjx, .content-2a4AW9 [style="height: 84px;"], .bannerImage-ubW8K-, .animatedBannerHoverLayer-129r1v{
-    display: none; 
-}
-.hasBanner-2IrYih .header-3OsQeK, .hasBanner-2IrYih .header-3OsQeK::hover, .hasBanner-2IrYih{
-    color: var(--header-primary);
-}
-
-.bannerImage-ubW8K- {
-    width: 100%;
-}
-
-#app-mount .bannerImage-ubW8K-:before {
-    background: none;
-}
-
-.containerDefault-YUSmu3 .content-1gYQeQ {
-    height: 34px;
-}
-
-[class="container-1-ERn5 clickable-vvKY2q hasBanner-2IrYih bannerVisible-Vkyg1I communityInfoVisible-3zc5_s"],
-[class="container-1-ERn5 clickable-vvKY2q selected-1GtAC5 hasBanner-2IrYih bannerVisible-Vkyg1I communityInfoVisible-3zc5_s"] {
-    height: 25px;
-    margin-bottom: 2px;
-}
-
 /* jump to message */
 [title^="https://discord.com/channels/"], [title^="https://ptb.discord.com/channels/"], [title^="https://canary.discord.com/channels/"] {
   line-height: 0;
@@ -154,16 +128,14 @@
 }
 
 /* blur spoilers*/
-.spoilerText-27bIiA,
-.spoilerText-27bIiA.hidden-3B-Rum {
-    background-color: transparent !important;
+#app-mount .spoilerText-2G40u0.hidden-2lQZ5q{
+  background-color: transparent;
+}
+.spoilerText-2G40u0.hidden-2lQZ5q>.inlineContent-2RshAT {
+  opacity: 1;
+  filter: blur(2px);
 }
 
-.spoilerText-27bIiA.hidden-3B-Rum > .inlineContent-2YnoDy {
-    opacity: 1 !important;
-    filter: blur(3px);
-    pointer-events: unset;
-}
 
 /* Serverlist */
 
@@ -192,3 +164,24 @@ height: 45px;}
 
 /* nitro button */
 .buttons-uaqb-5 > .button-ejjZWC {display: none}
+
+/* vc text channels */
+#app-mount .openChatIconItem-2kj5qO {
+  display: flex;
+  order: 1;
+  justify-content: center;
+  border-radius: 4px;
+  width: 42px;
+  padding-right: 0;
+}
+
+.openChatIconItem-2kj5qO:hover { background-color: var(--background-modifier-selected); }
+.openChatIconItem-2kj5qO .actionIcon-2sw4Sl { color: var(--channels-default); }
+/* remove banner */
+.animatedContainer-2laTjx, 
+.content-yjf30S [style="height: 84px;"], 
+.bannerImage-ubW8K-, 
+.animatedBannerHoverLayer-129r1v, 
+.container-2giAcK {
+  display: none;
+}
