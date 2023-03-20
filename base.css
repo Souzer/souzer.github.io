@@ -178,6 +178,7 @@ height: 45px;}
 
 .openChatIconItem-2kj5qO:hover { background-color: var(--background-modifier-selected); }
 .openChatIconItem-2kj5qO .actionIcon-2sw4Sl { color: var(--channels-default); }
+
 /* remove banner */
 .animatedContainer-2laTjx, 
 .content-yjf30S [style="height: 84px;"], 
@@ -185,4 +186,15 @@ height: 45px;}
 .animatedBannerHoverLayer-129r1v, 
 .container-2giAcK {
   display: none;
+}
+
+/* hover menu opacity */
+
+#app-mount .reactionTooltip-3IOBwg, .popout-TdhJ6Z {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+
+#app-mount .tooltip-33Jwqe, .tooltipRight-1UPNyA, .tooltipPrimary-2466a2, .tooltipDisablePointerEvents-3dgGo3, .listItemTooltip-eHcnUw {
+  background-color: rgba(0, 0, 0, 0.69);
 }
