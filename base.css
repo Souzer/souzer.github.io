@@ -198,3 +198,10 @@ height: 45px;}
 #app-mount .tooltip-33Jwqe, .tooltipRight-1UPNyA, .tooltipPrimary-2466a2, .tooltipDisablePointerEvents-3dgGo3, .listItemTooltip-eHcnUw {
   background-color: rgba(0, 0, 0, 0.69);
 }
+
+/* remove sticker suggestions in emote pop-up */
+
+.base-2v-uc0:has(.stickerAsset-4c7Oqy), 
+.base-2v-uc0:has(.stickersHeaderWithEmojiResults-1b7pYC) {
+    display: none;
+}
