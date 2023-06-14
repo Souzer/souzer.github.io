@@ -128,13 +128,13 @@
 }
 
 /* blur spoilers*/
-#app-mount .spoilerText-2G40u0.hidden-2lQZ5q{
-  background-color: transparent;
+.spoilerContent-32CqO- {
+  background: #0000;
 }
-.spoilerText-2G40u0.hidden-2lQZ5q>.inlineContent-2RshAT {
+
+.obscuredTextContentInner-2ytmvF {
   opacity: 1;
   filter: blur(2px);
-  pointer-events: unset;
 }
 
 
