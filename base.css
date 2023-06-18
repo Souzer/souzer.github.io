@@ -128,13 +128,14 @@
 }
 
 /* blur spoilers*/
-.spoilerContent-32CqO- {
-  background: #0000;
+.spoilerMarkdownContent-2R1Vwe {
+  background-color: transparent;
 }
-
+.spoilerMarkdownContent-2R1Vwe.hidden-2lQZ5q {
+  filter: blur(8px);
+}
 .obscuredTextContentInner-2ytmvF {
   opacity: 1;
-  filter: blur(2px);
 }
 
 
