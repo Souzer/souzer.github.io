@@ -129,13 +129,15 @@
 
 /* blur spoilers*/
 .spoilerMarkdownContent-2R1Vwe {
-  background-color: transparent;
+    background-color: transparent;
 }
 .spoilerMarkdownContent-2R1Vwe.hidden-2lQZ5q {
-  filter: blur(2px);
+    filter: blur(2px);
 }
 .obscuredTextContentInner-2ytmvF {
-  opacity: 1;
+    opacity: 1;
+    --__current--spoiler-content-opacity: 1;
+    --__current--spoiler-text-color: var(--text-normal) !important;
 }
 
 
