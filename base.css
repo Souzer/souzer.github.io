@@ -6,7 +6,7 @@
     --chat-bubble: 1;
 
     --chat-bubble-background-color: var(--background-secondary);
-    --chat-bubble-border-color: #4f4c78;
+    --chat-bubble-border-color: var(--background-secondary-alt);
     --chat-bubble-code-background-color: var(--background-secondary-alt);
 
     --chat-bubble-max-width: 90%;
