@@ -588,27 +588,27 @@
 
 /*category containers*/
 .containerDefault-3TQ5YN {
-  margin-top: .2em;
-  margin-bottom: .2em;
-  padding: 0px !important;
-  height: 1.4em !important;
-  border: 1px solid RGBA(0, 0, 0, 0.5);
-  border-radius: 1px;
-  background-color: RGBA(0, 0, 0, 0.4);
-}
-/*channel containers*/
-.content-1gYQeQ {
-  background-color: RGBA(0, 0, 0, 0.1);
-  border: 2px solid var(--background-tertiary);
-  padding: 2.5px;
-}
-.iconItem-1EjiK0 {
-  margin-left: 0px !important;
-  padding: 1px 0px !important;
-}
-.mainContent-20q_Hp{
-  padding: 0px 2px !important;
-}
+    margin-top: .2em;
+    margin-bottom: .2em;
+    padding: 1px !important;
+    height: 1.4em !important;
+    border: 2px solid RGBA(0, 0, 0, 0.5);
+    border-radius: 1px;
+    background-color: RGBA(0, 0, 0, 0.4);
+  }
+  /*channel containers*/
+  .content-1gYQeQ {
+    background-color: RGBA(0, 0, 0, 0.1);
+    border: 2px solid var(--background-tertiary);
+    padding: 2.5px;
+  }
+  .iconItem-1EjiK0 {
+    margin-left: 0px !important;
+    padding: 1px 0px !important;
+  }
+  .mainContent-20q_Hp{
+    padding: 1px 2px !important;
+  }
 
 /* Discord Message box v2 */
 :root {
