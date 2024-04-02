@@ -58,6 +58,9 @@ display: none;
 #app-mount .reaction__4a43f.reactionMe__0fffc .reactionCount__2c34d {
   color: rgb(238,232,170);
 }
+#app-mount .reaction__4a43f {
+  border-radius: 5px;
+}
 
 /* Hide Nitro and Shop */
 nav[class*="privateChannels" i] [data-list-item-id*="nitro"], nav[class*="privateChannels" i] [data-list-item-id*="shop"] {
