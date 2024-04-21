@@ -3,7 +3,7 @@
 @import url("https://minidiscordthemes.github.io/Squared/sq.min.css");
 
 #oneko {
-z-index: 1;
+z-index: 5;
 }
 
 
@@ -89,7 +89,7 @@ nav[class*="privateChannels" i] [data-list-item-id*="nitro"], nav[class*="privat
   height: unset;
   border-radius: 0px;
   border-bottom: 1px;
-  z-index: -1;
+  z-index: 2;
 }
 
 /* profile editing fix */
