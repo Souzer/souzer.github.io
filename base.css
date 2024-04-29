@@ -102,7 +102,11 @@ nav[class*="privateChannels" i] [data-list-item-id*="nitro"], nav[class*="privat
   left: 250px;
   top: 23px;
 }
-
+/* profile popout fix */
 .customizationSection__0f57e .bannerSVGWrapper__8a38c foreignObject {
   mask: none;
+}
+
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) {
+        width: auto;
 }
