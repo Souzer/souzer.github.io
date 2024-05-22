@@ -110,3 +110,7 @@ nav[class*="privateChannels" i] [data-list-item-id*="nitro"], nav[class*="privat
 #app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) {
         width: auto;
 }
+
+#app-mount {
+  font-family: gg sans ;
+}
