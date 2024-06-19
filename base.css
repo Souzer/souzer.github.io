@@ -26,42 +26,42 @@ z-index: 5;
 /***RUN https://syndishanx.github.io/Website/Update_Classes.html WHEN SHIT BREAKS***/
 
 /* disables decoration */
-.avatarDecoration_a30e58,
-.avatarDecoration__9eca4,
-.avatarDecoration__03b7c,
-.avatarDecoration_cf681a,
-.avatarDecoration__8a0c2,
-.avatarDecorationHint__04b99,
-.profileEffects__9b664{
+.avatarDecoration_a0e502,
+.avatarDecoration_b74403,
+.avatarDecoration_ab876d,
+.avatarDecoration_c51b4e,
+.avatarDecoration_ec86aa,
+.avatarDecorationHint_f89da9,
+.profileEffects_f867f9{
 display: none;
 }
 
 /* disables gift button */
-.buttons__7ecff > .button__581d0 {
+.buttons_d0696b > .button_dd4f85 {
     display: none;
 }
 
 /*blurred spoilers */
-.spoilerMarkdownContent__5c448 {
+.spoilerMarkdownContent_a3d0f7 {
     background-color: transparent;
 }
-.spoilerMarkdownContent__5c448.hidden_f44e41 {
+.spoilerMarkdownContent_a3d0f7.hidden_a3d0f7 {
     filter: blur(2px);
 }
-.obscuredTextContentInner_b4656f {
+.obscuredTextContentInner_a3d0f7 {
     opacity: 1;
     --__current--spoiler-content-opacity: 1;
     --__current--spoiler-text-color: var(--text-normal) !important;
 }
 
 /* reaction colours */
-#app-mount .reaction__4a43f.reactionMe__0fffc {
+#app-mount .reaction_ec6b19.reactionMe_ec6b19 {
   border-color: rgb(212,175,55);
 }
-#app-mount .reaction__4a43f.reactionMe__0fffc .reactionCount__2c34d {
+#app-mount .reaction_ec6b19.reactionMe_ec6b19 .reactionCount_ec6b19 {
   color: rgb(238,232,170);
 }
-#app-mount .reaction__4a43f {
+#app-mount .reaction_ec6b19 {
   border-radius: 5px;
 }
 
@@ -70,7 +70,7 @@ nav[class*="privateChannels" i] [data-list-item-id*="nitro"], nav[class*="privat
     display:none; 
 }
 /* badges */
-#app-mount .userPopoutOuter__3884e .profileBadges__1f2ab {
+#app-mount .userPopoutOuter_c69a7b .profileBadges_f89da9 {
   position: absolute;
   right: 18px;
   left: unset;
@@ -80,7 +80,7 @@ nav[class*="privateChannels" i] [data-list-item-id*="nitro"], nav[class*="privat
   padding: 1;
 }
 
-#app-mount .role_d81130 {
+#app-mount .role_f9575e {
   color: var(--text-secondary);
   line-height: normal;
   background: var(--bg-content);
@@ -93,21 +93,21 @@ nav[class*="privateChannels" i] [data-list-item-id*="nitro"], nav[class*="privat
 }
 
 /* profile editing fix */
-.preview_de6062 {
+.preview_bad983 {
   padding: 10px !important;
   height: 330px;
 }
 
-.avatarUploader__1f1a2 {
+.avatarUploader_ab876d {
   left: 250px;
   top: 23px;
 }
 /* profile popout fix */
-.customizationSection__0f57e .bannerSVGWrapper__8a38c foreignObject {
+.customizationSection_b3a5c2 .bannerSVGWrapper_b32cc2 foreignObject {
   mask: none;
 }
 
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) {
+#app-mount .root_f9a4c9:not(.modal_aee8c6, .carouselModal_d2b9a1, .root-2uUafN, .root-8LYsGj) {
         width: auto;
 }
 
