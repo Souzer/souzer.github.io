@@ -1,0 +1,116 @@
+
+@import url("https://discordstyles.github.io/Fluent/Fluent.css");
+@import url("https://minidiscordthemes.github.io/Squared/sq.min.css");
+
+#oneko {
+z-index: 5;
+}
+
+
+:root {
+  --chat-bubble-bg: hsl(var(--dark-bg-h) var(--dark-bg-s) 13%);
+  --accent: 88, 90, 160; /* The colour used throughout the app | R,G,B format | Default: 98, 205, 254 */
+  --channels-width: 250px; /* Size of the server channel/dms list | Default: 300px */
+  --members-width: 250px; /* Size of the members list | Default: 280px */
+  --server-size: 48px; /* Size of each server in the server list | Default: 48px */
+  --dark-background-hue: 240; /* The hue of the background colour. | Options: 0 to 360 | Default: 0 */
+  --dark-background-saturation: 9%; /* How much of the colour should be visible. | Must end in a % | Default: 0% */
+  --chat-mention-colour: 255, 215, 0; /* ping colours */
+  --pill-unread: hsl(var(--dark-bg-h) var(--dark-bg-s) 90%);
+  --bg-main: hsl(var(--dark-bg-h) var(--dark-bg-s) 12%);
+  --bg-alt: hsl(var(--dark-bg-h) var(--dark-bg-s) 9%);
+}
+
+
+
+/***RUN https://syndishanx.github.io/Website/Update_Classes.html WHEN SHIT BREAKS***/
+
+/* disables decoration */
+.avatarDecoration_a0e502,
+.avatarDecoration_b74403,
+.avatarDecoration_ab876d,
+.avatarDecoration_c51b4e,
+.avatarDecoration_ec86aa,
+.avatarDecorationHint_f89da9,
+.profileEffects_f867f9{
+display: none;
+}
+
+/* disables gift button */
+.buttons_d0696b > .button_dd4f85 {
+    display: none;
+}
+
+/*blurred spoilers */
+.spoilerMarkdownContent_a3d0f7 {
+    background-color: transparent;
+}
+.spoilerMarkdownContent_a3d0f7.hidden_a3d0f7 {
+    filter: blur(2px);
+}
+.obscuredTextContentInner_a3d0f7 {
+    opacity: 1;
+    --__current--spoiler-content-opacity: 1;
+    --__current--spoiler-text-color: var(--text-normal) !important;
+}
+
+/* reaction colours */
+#app-mount .reaction_ec6b19.reactionMe_ec6b19 {
+  border-color: rgb(212,175,55);
+}
+#app-mount .reaction_ec6b19.reactionMe_ec6b19 .reactionCount_ec6b19 {
+  color: rgb(238,232,170);
+}
+#app-mount .reaction_ec6b19 {
+  border-radius: 5px;
+}
+
+/* Hide Nitro and Shop */
+nav[class*="privateChannels" i] [data-list-item-id*="nitro"], nav[class*="privateChannels" i] [data-list-item-id*="shop"] {
+    display:none; 
+}
+/* badges */
+#app-mount .userPopoutOuter_c69a7b .profileBadges_f89da9 {
+  position: absolute;
+  right: 18px;
+  left: unset;
+  top: 125px;
+  z-index: 0;
+  background: transparent;
+  padding: 1;
+}
+
+#app-mount .role_f9575e {
+  color: var(--text-secondary);
+  line-height: normal;
+  background: var(--bg-content);
+  margin: 1px;
+  padding: 4px 5px;
+  height: unset;
+  border-radius: 0px;
+  border-bottom: 1px;
+  z-index: 2;
+}
+
+/* profile editing fix */
+.preview_bad983 {
+  padding: 10px !important;
+  height: 330px;
+}
+
+.avatarUploader_ab876d {
+  left: 250px;
+  top: 23px;
+}
+/* profile popout fix */
+.customizationSection_b3a5c2 .bannerSVGWrapper_b32cc2 foreignObject {
+  mask: none;
+}
+
+#app-mount .root_f9a4c9:not(.modal_aee8c6, .carouselModal_d2b9a1, .root-2uUafN, .root-8LYsGj) {
+        width: auto;
+}
+
+#app-mount {
+  font-family: gg sans ;
+}
