@@ -27,8 +27,12 @@
     --chat-bubble-box-shadow-color-l: 0%;
     --chat-bubble-box-shadow-color-a: 0.16;
 }
+
+/*emoji menu bgs */
 .contentWrapper_af5dbb,.popoutContainer_cf58b5 {
 	background:rgb(0,0,0);}
+.emojiPicker_c6ee36{
+	background-color:rgb(0, 0, 0)}
 /*accent colours (pings etc) */
   :root {
     --accent: rgba(86, 194, 202, 0.603);
