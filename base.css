@@ -28,6 +28,16 @@
     --chat-bubble-box-shadow-color-a: 0.16;
 }
 
+/*button border*/
+.button_b9fe76.buttonSize_b9fe76, 
+.lookFilled_dd4f85.colorPrimary_dd4f85, 
+.popoutBannerPremium_c3e427 
+.pencilContainer_c3e427, 
+.full-motion, 
+.button__292b6, 
+.lookFilled_dd4f85.colorBrand_dd4f85, 
+.navButtonActive_af5dbb {
+    border-radius: 5px;}
 /*emoji menu bgs */
 .contentWrapper_af5dbb,.popoutContainer_cf58b5 {
 	background:rgb(0,0,0);
