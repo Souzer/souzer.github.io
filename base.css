@@ -103,13 +103,13 @@ display: none;
 }
 
 /*blurred spoilers */
-.spoilerMarkdownContent_a3d0f7 {
+.spoilerMarkdownContent_aa9639 {
     background-color: transparent;
 }
-.spoilerMarkdownContent_a3d0f7.hidden_a3d0f7 {
+.spoilerMarkdownContent_aa9639.hidden_aa9639 {
     filter: blur(2px);
 }
-.obscuredTextContentInner_a3d0f7 {
+.obscuredTextContentInner_aa9639 {
     opacity: 1;
     --__current--spoiler-content-opacity: 1;
     --__current--spoiler-text-color: var(--text-normal) !important;
