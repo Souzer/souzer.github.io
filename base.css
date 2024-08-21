@@ -48,6 +48,10 @@
 .app_a01fb1 button, .lookFilled-yCfaCM.colorYellow-Pgtmch {
     border-radius: 5px;
 }
+
+/** Hide apps button next to chatbar */
+.channelAppLauncher_df39bd { display: none; }
+
 /*emoji menu bgs */
 .contentWrapper_af5dbb,.popoutContainer_cf58b5 {
 	background:rgb(0,0,0);
