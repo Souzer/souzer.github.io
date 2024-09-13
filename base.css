@@ -128,4 +128,14 @@ nav[class*="privateChannels" i] [data-list-item-id*="nitro"], nav[class*="privat
 #app-mount .autocomplete_bcc24e {
     background-color: #030303;
 }
+/* group activity? idk what this is tbh */
+[class^='membersGroup']:has([role=button]),
+[class^='member'] [class^='container']:has([class*='badges']) {
+  display: none;
+}
+
+/* Removes App Icon on Images */
+[aria-label="Edit Image with Apps"]{
+  display: none;
+}
 
