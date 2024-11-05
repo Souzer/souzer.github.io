@@ -101,9 +101,9 @@ z-index: 1000;
 display: none;
 }
 
-/* disables gift button */
-.buttons_d0696b > .button_dd4f85 {
-    display: none;
+/* Hide Gift Button from Chat Bar */
+button:has([d^=" M-7,10 C-8.104999542236328,10 -9"]) {
+  display: none!important;
 }
 
 /*blurred spoilers */
