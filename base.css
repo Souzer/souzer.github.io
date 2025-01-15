@@ -170,4 +170,9 @@ nav[class*="privateChannels" i] [data-list-item-id*="nitro"], nav[class*="privat
   display: none;
 }
 
+/* Don't show me activity */
+[class^='membersGroup']:has([role=button]),
+[class^='member'] [class^='container']:has([class*='badges']) {
+  display: none;
+}
 
