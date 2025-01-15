@@ -1,12 +1,93 @@
 /***RUN https://syndishanx.github.io/Website/Update_Classes.html WHEN SHIT BREAKS***/
+@import url('https://refact0r.github.io/midnight-discord/midnight.css');
+@import url("https://minidiscordthemes.github.io/Squared/sq.min.css");
+@import url("https://discordstyles.github.io/HorizontalServerList/resizablelist.css");
+@import url("https://maendisease.github.io/BetterDiscordStuff/css/ChatBubbles.css");
+
+/* customize things here */
+:root {
+	/* font, change to 'gg sans' for default discord font*/
+	--font: 'gg sans';
+
+	/* top left corner text */
+	--corner-text: '';
+
+	/* color of status indicators and window controls */
+	--online-indicator: var(--accent-2); /* change to #23a55a for default green */
+	--dnd-indicator: hsl(340, 60%, 60%); /* change to #f13f43 for default red */
+	--idle-indicator: hsl(50, 60%, 60%); /* change to #f0b232 for default yellow */
+	--streaming-indicator: hsl(260, 60%, 60%); /* change to #593695 for default purple */
+
+	/* accent colors */
+	--accent-1: hsl(190, 70%, 60%); /* links */
+	--accent-2: red; /* general unread/mention elements */
+	--accent-3: hsl(190, 70%, 42%); /* accent buttons */
+	--accent-4: hsl(190, 70%, 36%); /* accent buttons when hovered */
+	--accent-5: hsl(190, 70%, 30%); /* accent buttons when clicked */
+	--mention: hsla(190, 80%, 52%, 0.1); /* mentions & mention messages */
+	--mention-hover: hsla(190, 80%, 52%, 0.05); /* mentions & mention messages when hovered */
+
+	/* text colors */
+	--text-0: white; /* text on colored elements */
+	--text-1: white; /* other normally white text */
+	--text-2: hsl(220, 25%, 70%); /* headings and important text */
+	--text-3: white; /* normal text */
+	--text-4: hsl(220, 15%, 40%); /* icon buttons and channels */
+	--text-5: hsl(220, 15%, 25%); /* muted channels/chats and timestamps */
+
+	/* background and dark colors */
+	--bg-1: hsl(220, 15%, 20%); /* dark buttons when clicked */
+	--bg-2: hsl(220, 15%, 16%); /* dark buttons */
+	--bg-3: rgb(30, 29, 29); /* spacing, secondary elements */
+	--bg-4: rgb(19, 18, 18); /* main background color */
+	--hover: hsla(230, 20%, 40%, 0.1); /* channels and buttons when hovered */
+	--active: hsla(220, 20%, 40%, 0.2); /* channels and buttons when clicked or selected */
+	--message-hover: hsla(220, 0%, 0%, 0.1); /* messages when hovered */
+
+	/* amount of spacing and padding */
+	--spacing: 10px;
+
+	/* animations */
+	/* ALL ANIMATIONS CAN BE DISABLED WITH REDUCED MOTION IN DISCORD SETTINGS */
+	--list-item-transition: 0.2s ease; /* channels/members/settings hover transition */
+	--unread-bar-transition: 0.2s ease; /* unread bar moving into view transition */
+	--moon-spin-transition: 0.4s ease; /* moon icon spin */
+	--icon-spin-transition: 1s ease; /* round icon button spin (settings, emoji, etc.) */
+
+	/* corner roundness (border-radius) */
+	--roundness-xl: 1px; /* roundness of big panel outer corners */
+	--roundness-l: 1px; /* popout panels */
+	--roundness-m: 1px; /* smaller panels, images, embeds */
+	--roundness-s: 1px; /* members, settings inputs */
+	--roundness-xs: 1px; /* channels, buttons */
+	--roundness-xxs: 1px; /* searchbar, small elements */
+
+	/* direct messages moon icon */
+	/* change to block to show, none to hide */
+	--discord-icon: none; /* discord icon */
+	--moon-icon: block; /* moon icon */
+	--moon-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg'); /* custom icon url */
+	--moon-icon-size: auto;
+
+	/* filter uncolorable elements to fit theme */
+	/* (just set to none, they're too much work to configure) */
+	--login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(0.4); /* login background artwork */
+	--green-to-accent-3-filter: hue-rotate(56deg) saturate(1.43); /* add friend page explore icon */
+	--blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.84) brightness(1.2); /* add friend page school icon */
+
+	/* nav buttons */
+	--windows-nav: block;
+	--custom-nav: none;
+}
 
 
- @import url('https://slippinggittys-discord-Themes.github.io/surCord/src/fixations/additions/themes/materialdark.css'); 
- @import url('https://slippinggittys-discord-Themes.github.io/surCord/src/source.css');
- @import url("https://Cinnab0nBak3ry.github.io/AppleFontsCSS/Apple-fonts.css");
- @import url("https://minidiscordthemes.github.io/Squared/sq.min.css");
- @import url("https://discordstyles.github.io/HorizontalServerList/resizablelist.css");
- @import url("https://maendisease.github.io/BetterDiscordStuff/css/ChatBubbles.css");
+
+
+
+
+
+
+
 
 :root {
     --chat-bubble: 1;
@@ -16,7 +97,7 @@
     --chat-bubble-code-background-color: var(--background-secondary-alt);
 
     --chat-bubble-max-width: 90%;
-    --chat-bubble-border-radius: 8px;
+    --chat-bubble-border-radius: 1px;
 
     --chat-bubble-box-shadow-h-offset: 0;
     --chat-bubble-box-shadow-v-offset: 4px;
@@ -27,46 +108,7 @@
     --chat-bubble-box-shadow-color-l: 0%;
     --chat-bubble-box-shadow-color-a: 0.16;
 }
-
-/*button border*/
-.button_b9fe76.buttonSize_b9fe76, 
-.lookFilled_dd4f85.colorPrimary_dd4f85, 
-.popoutBannerPremium_c3e427 
-.pencilContainer_c3e427, 
-.full-motion, 
-.button__292b6, 
-.lookFilled_dd4f85.colorBrand_dd4f85, 
-.navButtonActive_af5dbb {
-    border-radius: 5px;}
-.lookFilled_dd4f85.colorRed_dd4f85 {
-    border-radius: 5px;
-}
-.lookFilled_dd4f85.colorRed_dd4f85 {
-    border-radius: 5px;
-}
-
-.app_a01fb1 button, .lookFilled-yCfaCM.colorYellow-Pgtmch {
-    border-radius: 5px;
-}
-
-/** Hide apps button next to chatbar */
-.channelAppLauncher_df39bd { display: none; }
-
-/*emoji menu bgs */
-.contentWrapper_af5dbb,.popoutContainer_cf58b5 {
-	background:rgb(0,0,0);
-}
-.wrapper_c6ee36 .emojiPicker_c6ee36{
-	background-color:rgb(0, 0, 0);backdrop-filter:blur(10px)
-}
-/*accent colours (pings etc) */
-  :root {
-    --accent: rgba(86, 194, 202, 0.603);
-    --accent-hover: rgb(237,150,186);
-    --accent-selected: rgba(237, 150, 186, 0.301);
-    --accent-focused: ;
-  }
-  
+ 
 :root {
   --server-size: 40px; /* Size of the server icons */
 }
@@ -83,12 +125,11 @@ z-index: 1000;
   color: rgb(238,232,170);
 }
 #app-mount .reaction_ec6b19 {
-  border-radius: 5px;
+  border-radius: 4px;
 }
-/* font type */
-#app-mount {
-  font-family: gg sans ;
-}
+
+/** Hide apps button next to chatbar */
+.channelAppLauncher_df39bd { display: none; }
 
 /* disables decoration */
 .avatarDecoration_a0e502,
@@ -124,18 +165,9 @@ nav[class*="privateChannels" i] [data-list-item-id*="nitro"], nav[class*="privat
     display:none; 
 }
 
-/* emoji menu */
-#app-mount .autocomplete_bcc24e {
-    background-color: #030303;
-}
-/* group activity? idk what this is tbh */
-[class^='membersGroup']:has([role=button]),
-[class^='member'] [class^='container']:has([class*='badges']) {
-  display: none;
-}
-
 /* Removes App Icon on Images */
 [aria-label="Edit Image with Apps"]{
   display: none;
 }
+
 
