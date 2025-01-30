@@ -118,27 +118,27 @@ z-index: 1000;
 }
 
 /* reaction colours */
-#app-mount .reaction_ec6b19.reactionMe_ec6b19 {
+#app-mount .reaction__23977.reactionMe__23977 {
   border-color: rgb(212,175,55);
 }
-#app-mount .reaction_ec6b19.reactionMe_ec6b19 .reactionCount_ec6b19 {
+#app-mount .reaction__23977.reactionMe__23977 .reactionCount__23977 {
   color: rgb(238,232,170);
 }
-#app-mount .reaction_ec6b19 {
+#app-mount .reaction__23977 {
   border-radius: 4px;
 }
 
 /** Hide apps button next to chatbar */
-.channelAppLauncher_df39bd { display: none; }
+.channelAppLauncher_e6e74f { display: none; }
 
 /* disables decoration */
-.avatarDecoration_a0e502,
-.avatarDecoration_b74403,
+.avatarDecoration__78e61,
+.avatarDecoration__0b5ea,
 .avatarDecoration_ab876d,
-.avatarDecoration_c51b4e,
-.avatarDecoration_f9f2ca,
+.avatarDecoration__44b0c,
+.avatarDecoration_c19a55,
 .avatarDecorationHint_f89da9,
-.profileEffects_f867f9{
+.profileEffects__01370{
 display: none;
 }
 
@@ -148,13 +148,13 @@ button:has([d^=" M-7,10 C-8.104999542236328,10 -9"]) {
 }
 
 /*blurred spoilers */
-.spoilerMarkdownContent_aa9639 {
+.spoilerMarkdownContent__54ab5 {
     background-color: transparent;
 }
-.spoilerMarkdownContent_aa9639.hidden_aa9639 {
+.spoilerMarkdownContent__54ab5.hidden__54ab5 {
     filter: blur(2px);
 }
-.obscuredTextContentInner_aa9639 {
+.obscuredTextContentInner__54ab5 {
     opacity: 1;
     --__current--spoiler-content-opacity: 1;
     --__current--spoiler-text-color: var(--text-normal) !important;
@@ -175,4 +175,5 @@ nav[class*="privateChannels" i] [data-list-item-id*="nitro"], nav[class*="privat
 [class^='member'] [class^='container']:has([class*='badges']) {
   display: none;
 }
+
 
