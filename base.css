@@ -186,4 +186,8 @@ nav[class*="privateChannels" i] [data-list-item-id*="nitro"], nav[class*="privat
 [class^=message_]:not(:hover) [class^=avatar_] {
     border-radius: 0%
 }
+/* optionally hide the bar at bottom of server list */
+.sidebar_c48ade:after {
+  display: none;
+}
 
