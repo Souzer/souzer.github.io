@@ -176,4 +176,14 @@ nav[class*="privateChannels" i] [data-list-item-id*="nitro"], nav[class*="privat
   display: none;
 }
 
+/* square avatars */
+[class^=avatar_] {
+    border-radius: 0%;
+}
+[class^=message_]:hover [class^=avatar_] {
+    border-radius: 0%
+}
+[class^=message_]:not(:hover) [class^=avatar_] {
+    border-radius: 0%
+}
 
