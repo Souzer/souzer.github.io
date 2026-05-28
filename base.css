@@ -131,7 +131,7 @@ z-index: 1000;
 /** Hide apps button next to chatbar */
 .channelAppLauncher_e6e74f { display: none; }
 
-/* disables decoration */
+/* disables decoration 
 .avatarDecoration__78e61,
 .avatarDecoration__0b5ea,
 .avatarDecoration_ab876d,
@@ -140,7 +140,7 @@ z-index: 1000;
 .avatarDecorationHint_f89da9,
 .profileEffects__01370{
 display: none;
-}
+} */
 
 /* Hide Gift Button from Chat Bar */
 button:has([d^=" M-7,10 C-8.104999542236328,10 -9"]) {
